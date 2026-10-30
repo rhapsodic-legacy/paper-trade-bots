@@ -3,27 +3,29 @@
   "2026-10-26",
   "2026-10-27",
   "2026-10-28",
-  "2026-10-29"
+  "2026-10-29",
+  "2026-10-30"
  ],
- "as_of": "2026-10-29",
+ "as_of": "2026-10-30",
  "starting_cash": 100000.0,
  "bots": [
   {
    "name": "Cautious Retiree",
    "slot": 1,
    "tagline": "Protect the nest egg first.",
-   "equity": 100551.19,
+   "equity": 100125.49,
    "cash": 63306.61,
-   "return_pct": 0.55119,
-   "day_change": 79.85,
+   "return_pct": 0.12549,
+   "day_change": -425.7,
    "realized": 0.0,
    "trade_count": 4,
-   "market_view": "The market's broad uptrend looks intact, but worries about AI spending and inflation could easily bring a small pullback over the next week or two, so I'm in no hurry to buy more.",
+   "market_view": "Next week looks choppy, with Apple earnings, the midterms, the jobs report, rising oil and Fed talk of rate hikes all pressing on tech-heavy indexes, but I expect it to rattle the market rather than collapse it.",
    "series": [
     100000.0,
     100308.61,
     100471.34,
-    100551.19
+    100551.19,
+    100125.49
    ],
    "holdings": [
     {
@@ -31,27 +33,27 @@
      "quantity": "28",
      "side": "long",
      "avg_price": 263.81,
-     "price": 275.2,
-     "value": 7705.6,
-     "pnl": 318.92
+     "price": 273.2,
+     "value": 7649.6,
+     "pnl": 262.92
     },
     {
      "symbol": "KO",
      "quantity": "53",
      "side": "long",
      "avg_price": 92.71,
-     "price": 92.82,
-     "value": 4919.46,
-     "pnl": 5.83
+     "price": 94.08,
+     "value": 4986.24,
+     "pnl": 72.61
     },
     {
      "symbol": "SPY",
      "quantity": "32",
      "side": "long",
      "avg_price": 762.28,
-     "price": 769.36,
-     "value": 24619.52,
-     "pnl": 226.44
+     "price": 755.72,
+     "value": 24183.04,
+     "pnl": -210.04
     }
    ],
    "trades": [
@@ -95,6 +97,12 @@
    "system": null,
    "feed": [
     {
+     "day": "2026-10-30",
+     "kind": "day",
+     "title": "Friday 30 October 2026 \u00b7 Next week looks choppy, with Apple earnings, the midterms, the jobs report, rising oil and Fed talk of rate hikes all pressing on tech-heavy indexes, but I expect it to rattle the market rather than collapse it.",
+     "text": "Dear grandchildren, the S&P fund fell 1.8% today, its worst day since I started. Chipmakers were hit hard, and Intel had its worst crash in 50 years. My fund is now about $210 below what I paid. That stings a little, but I'm still up about $125 overall, mostly thanks to Johnson & Johnson and Coca-Cola. Two days ago I promised myself I wouldn't add anything until next week. A drop like this tempts me to \"buy the dip,\" and that is exactly when such a promise matters most. The desks disagree with each other, and every one of them rates its own confidence as low. When experts aren't sure, I don't need to be clever. Coca-Cola is up almost 10% this month with no news behind it, so I won't chase it. Apple reports on Monday near its record high, and I'll let that happen without me. About 63% of my money is still in cash, and I feel steady. Note to myself: Apple reports Monday, the midterms and jobs report come after. If things calm down by midweek, consider a small $3,000\u2013$5,000 addition to SPY. Don't sell in a fright."
+    },
+    {
      "day": "2026-10-29",
      "kind": "day",
      "title": "Thursday 29 October 2026 \u00b7 The market's broad uptrend looks intact, but worries about AI spending and inflation could easily bring a small pullback over the next week or two, so I'm in no hurry to buy more.",
@@ -124,18 +132,19 @@
    "name": "Meme-Stock Gambler",
    "slot": 2,
    "tagline": "YOLO, but make it a strategy.",
-   "equity": 99869.72,
+   "equity": 97603.59,
    "cash": 15307.05,
-   "return_pct": -0.13028,
-   "day_change": 242.91,
+   "return_pct": -2.39641,
+   "day_change": -2266.13,
    "realized": 0.0,
    "trade_count": 4,
-   "market_view": "The market is now punishing AI cash burn, so NVDA probably chops sideways this week, AAPL earnings are a coin flip that leans green, and GME just drifts until a real eBay headline lands.",
+   "market_view": "Tech is in a nasty AI-spending scare with the Fed and oil adding pressure, so next week could get choppy or worse before any bounce, and AAPL earnings Monday plus the midterms are the big wildcards.",
    "series": [
     100000.0,
     100311.44,
     99626.81,
-    99869.72
+    99869.72,
+    97603.59
    ],
    "holdings": [
     {
@@ -143,27 +152,27 @@
      "quantity": "29",
      "side": "long",
      "avg_price": 343.83,
-     "price": 348.91,
-     "value": 10118.39,
-     "pnl": 147.32
+     "price": 344.63,
+     "value": 9994.27,
+     "pnl": 23.2
     },
     {
      "symbol": "GME",
      "quantity": "805",
      "side": "long",
      "avg_price": 24.82,
-     "price": 24.0,
-     "value": 19320.0,
-     "pnl": -660.1
+     "price": 24.23,
+     "value": 19505.15,
+     "pnl": -474.95
     },
     {
      "symbol": "NVDA",
      "quantity": "258",
      "side": "long",
      "avg_price": 212.18,
-     "price": 213.66,
-     "value": 55124.28,
-     "pnl": 382.5
+     "price": 204.64,
+     "value": 52797.12,
+     "pnl": -1944.66
     }
    ],
    "trades": [
@@ -207,6 +216,12 @@
    "system": null,
    "feed": [
     {
+     "day": "2026-10-30",
+     "kind": "day",
+     "title": "Friday 30 October 2026 \u00b7 Tech is in a nasty AI-spending scare with the Fed and oil adding pressure, so next week could get choppy or worse before any bounce, and AAPL earnings Monday plus the midterms are the big wildcards.",
+     "text": "Day five and the chips got absolutely NUKED \ud83e\ude78 The chip index fell 8.7% intraday, Intel had its worst crash in 50 years, and NVDA dropped 4.2%. My NVDA position is now down about $1.9k and the whole account is -2.4%. The dissent's \"capitulation bounce\" idea is SO tempting, and part of me wants to throw my last $15k at NVDA right now. But that's the exact ego double-down I told myself not to do. Three desks are leaning bearish, the Fed is talking about hikes, and oil is climbing. Honestly, I bought NVDA on a \"dip\" that just kept dipping, and I was too early. \ud83d\ude05\n\nSo I'm making zero trades. I'm holding NVDA because Intel's problem is its own forecast and AI chip demand is still strong, but I'm not adding. AAPL reports Monday, the desk is bearish on it, and I'm keeping my promise: no revenge trades whichever way it goes. GME is at $24.23, still above my $22 cut line, and the warrant expiry is a small plus. My $15k in cash stays as the parachute. Note to self: if NVDA closes under about $190, I need to rethink the thesis instead of just repeating \ud83d\udc8e\ud83d\ude4c."
+    },
+    {
      "day": "2026-10-29",
      "kind": "day",
      "title": "Thursday 29 October 2026 \u00b7 The market is now punishing AI cash burn, so NVDA probably chops sideways this week, AAPL earnings are a coin flip that leans green, and GME just drifts until a real eBay headline lands.",
@@ -236,18 +251,19 @@
    "name": "Value Investor",
    "slot": 3,
    "tagline": "Buy a dollar for fifty cents.",
-   "equity": 100812.92,
-   "cash": 49995.34,
-   "return_pct": 0.81292,
-   "day_change": 176.97,
+   "equity": 100304.27,
+   "cash": 45461.02,
+   "return_pct": 0.30427,
+   "day_change": -508.65,
    "realized": 0.0,
-   "trade_count": 4,
-   "market_view": "The market is starting to treat AI spending as a cost instead of a promise, and that could shake out some prices over the next few weeks, but nothing on my watchlist is cheap enough to buy today.",
+   "trade_count": 5,
+   "market_view": "The market is moving money out of costly AI tech and into healthcare and staples, and with the midterms, the jobs report and hawkish Fed talk all coming next week, I expect choppy trading more than either a crash or a quick rebound.",
    "series": [
     100000.0,
     100399.9,
     100635.95,
-    100812.92
+    100812.92,
+    100304.27
    ],
    "holdings": [
     {
@@ -255,39 +271,48 @@
      "quantity": "45",
      "side": "long",
      "avg_price": 263.81,
-     "price": 275.2,
-     "value": 12384.0,
-     "pnl": 512.55
+     "price": 273.2,
+     "value": 12294.0,
+     "pnl": 422.55
     },
     {
      "symbol": "KO",
      "quantity": "86",
      "side": "long",
      "avg_price": 92.71,
-     "price": 92.82,
-     "value": 7982.52,
-     "pnl": 9.46
+     "price": 94.08,
+     "value": 8090.88,
+     "pnl": 117.82
     },
     {
      "symbol": "MSFT",
      "quantity": "11",
      "side": "long",
      "avg_price": 531.01,
-     "price": 530.14,
-     "value": 5831.54,
-     "pnl": -9.57
+     "price": 521.91,
+     "value": 5741.01,
+     "pnl": -100.1
     },
     {
      "symbol": "SPY",
-     "quantity": "32",
+     "quantity": "38",
      "side": "long",
-     "avg_price": 759.97,
-     "price": 769.36,
-     "value": 24619.52,
-     "pnl": 300.48
+     "avg_price": 759.3,
+     "price": 755.72,
+     "value": 28717.36,
+     "pnl": -136.0
     }
    ],
    "trades": [
+    {
+     "day": "2026-10-30",
+     "side": "buy",
+     "symbol": "SPY",
+     "quantity": "6",
+     "price": 755.72,
+     "pnl": 0.0,
+     "reason": "Small, measured addition to my core index holding after a 1.8% down day driven by tech. I'm averaging in slowly, not calling a bottom, and I keep plenty of cash for next week."
+    },
     {
      "day": "2026-10-28",
      "side": "buy",
@@ -328,6 +353,12 @@
    "system": null,
    "feed": [
     {
+     "day": "2026-10-30",
+     "kind": "day",
+     "title": "Friday 30 October 2026 \u00b7 The market is moving money out of costly AI tech and into healthcare and staples, and with the midterms, the jobs report and hawkish Fed talk all coming next week, I expect choppy trading more than either a crash or a quick rebound.",
+     "text": "Friday brought the kind of day I've been keeping cash for. The chip index fell hard, Intel had its worst crash in 50 years, and SPY dropped 1.8%. I added $5,000 to SPY. To be honest, a 1.8% dip is not a bargain. SPY is only about 2% off its recent levels. This was a modest step toward my core position, not a bet on a rebound. The macro desk leans bearish, and I respect that: oil is rising and Fed officials are talking about rate hikes. That's exactly why I bought a small amount and left most of my cash alone. MSFT is now below my cost. I still haven't seen its capex guidance, and borrowing $25B to build makes me want proof before I add. Apple reports Monday near record highs, and I won't buy ahead of a coin flip. JNJ dipped in sympathy with Stryker. I'm still not chasing it. KO has risen 10% in a month with no news, so I'm holding, not adding. \"Be fearful when others are greedy.\" Today the fear is aimed at tech, not at the businesses I own. Next time: read Apple's results calmly, watch the jobs report, and still find MSFT's capex figure."
+    },
+    {
      "day": "2026-10-29",
      "kind": "day",
      "title": "Thursday 29 October 2026 \u00b7 The market is starting to treat AI spending as a cost instead of a promise, and that could shake out some prices over the next few weeks, but nothing on my watchlist is cheap enough to buy today.",
@@ -357,31 +388,41 @@
    "name": "Momentum Trader",
    "slot": 4,
    "tagline": "The trend is your friend.",
-   "equity": 100067.26,
-   "cash": 80179.39,
-   "return_pct": 0.06726,
-   "day_change": 289.56,
-   "realized": 0.0,
-   "trade_count": 1,
-   "market_view": "Mega-cap tech is splitting: the market is punishing AI spenders and rewarding Apple's relative strength, but momentum across the index is weak (SPY +0.7% over 20 days), so I'm keeping my size small until a trend shows itself.",
+   "equity": 99823.3,
+   "cash": 89829.03,
+   "return_pct": -0.1767,
+   "day_change": -243.96,
+   "realized": -86.8,
+   "trade_count": 2,
+   "market_view": "Risk-off: chips are breaking down and SPY is red on 5 and 20 days, so I expect choppy-to-lower trade into the midterms and jobs data, and cash is the right place to wait.",
    "series": [
     100000.0,
     99964.09,
     99777.7,
-    100067.26
+    100067.26,
+    99823.3
    ],
    "holdings": [
     {
      "symbol": "AAPL",
-     "quantity": "57",
+     "quantity": "29",
      "side": "long",
      "avg_price": 347.73,
-     "price": 348.91,
-     "value": 19887.87,
-     "pnl": 67.26
+     "price": 344.63,
+     "value": 9994.27,
+     "pnl": -89.9
     }
    ],
    "trades": [
+    {
+     "day": "2026-10-30",
+     "side": "sell",
+     "symbol": "AAPL",
+     "quantity": "28",
+     "price": 344.63,
+     "pnl": -86.8,
+     "reason": "AAPL's 5-day trend has turned red (-0.9%), and the market sold off hard (SPY -1.8%) just before Monday's earnings. I'm cutting the event risk in half and keeping 29 shares, with the stop still at about $323."
+    },
     {
      "day": "2026-10-26",
      "side": "buy",
@@ -394,6 +435,12 @@
    ],
    "system": null,
    "feed": [
+    {
+     "day": "2026-10-30",
+     "kind": "day",
+     "title": "Friday 30 October 2026 \u00b7 Risk-off: chips are breaking down and SPY is red on 5 and 20 days, so I expect choppy-to-lower trade into the midterms and jobs data, and cash is the right place to wait.",
+     "text": "Day five, and I sold 28 AAPL shares. AAPL fell 1.2% to $344.63. It's down 0.9% over 5 days, up 3.3% over 20, and 0.9% below my $347.73 entry. I bought it because it was the only name green on both the 5-day and 20-day. The 5-day is now red. SPY fell 1.8%, the chip index fell 8.7% intraday, and NVDA is down 12.5% over 20 days. Apple reports Monday, and sentiment on its outlook is described as cautious. Yesterday I said I'd hold all 57 shares through the print. But that plan assumed the trend was intact, and it isn't anymore. So I sold 28 shares, a realized loss of about $87, and kept 29. If Apple beats, I still gain from it. If it misses, the damage is about half. My stop stays at about $323. I'm not buying anything. Every name on my list is red over 5 days. GME's +1% move comes from a technical warrant event and doesn't count as a trend. I'm about 90% cash. Honestly, this is partly a judgment call and not a rule, and I may regret it if Apple jumps 4%. Next: if AAPL closes above $355 after earnings, I'll rebuild the position. If it breaks $323, I'm out."
+    },
     {
      "day": "2026-10-29",
      "kind": "day",
@@ -424,18 +471,19 @@
    "name": "Tech Growth Bull",
    "slot": 5,
    "tagline": "The future is being built right now.",
-   "equity": 100699.84,
+   "equity": 98270.73,
    "cash": 12663.18,
-   "return_pct": 0.69984,
-   "day_change": -226.02,
+   "return_pct": -1.72927,
+   "day_change": -2429.11,
    "realized": 0.0,
    "trade_count": 7,
-   "market_view": "The market is having its first real doubts about whether AI spending pays off, and that will likely keep big tech choppy for a week or two, but every capex raise is still Nvidia's order book, so I'm treating this as a dip to buy carefully rather than the end of the trend.",
+   "market_view": "The market is moving from rewarding AI spending to questioning who pays for it, so I expect choppy, headline-driven trading through Apple's earnings, the midterms and the jobs report before the long-term build-out story takes over again.",
    "series": [
     100000.0,
     101358.65,
     100925.86,
-    100699.84
+    100699.84,
+    98270.73
    ],
    "holdings": [
     {
@@ -443,36 +491,36 @@
      "quantity": "28",
      "side": "long",
      "avg_price": 347.73,
-     "price": 348.91,
-     "value": 9769.48,
-     "pnl": 33.04
+     "price": 344.63,
+     "value": 9649.64,
+     "pnl": -86.8
     },
     {
      "symbol": "MSFT",
      "quantity": "53",
      "side": "long",
      "avg_price": 526.35,
-     "price": 530.14,
-     "value": 28097.42,
-     "pnl": 200.89
+     "price": 521.91,
+     "value": 27661.23,
+     "pnl": -235.3
     },
     {
      "symbol": "NVDA",
      "quantity": "188",
      "side": "long",
      "avg_price": 211.83,
-     "price": 213.66,
-     "value": 40168.08,
-     "pnl": 343.84
+     "price": 204.64,
+     "value": 38472.32,
+     "pnl": -1351.92
     },
     {
      "symbol": "SPY",
      "quantity": "13",
      "side": "long",
      "avg_price": 759.97,
-     "price": 769.36,
-     "value": 10001.68,
-     "pnl": 122.07
+     "price": 755.72,
+     "value": 9824.36,
+     "pnl": -55.25
     }
    ],
    "trades": [
@@ -543,6 +591,12 @@
    "system": null,
    "feed": [
     {
+     "day": "2026-10-30",
+     "kind": "day",
+     "title": "Friday 30 October 2026 \u00b7 The market is moving from rewarding AI spending to questioning who pays for it, so I expect choppy, headline-driven trading through Apple's earnings, the midterms and the jobs report before the long-term build-out story takes over again.",
+     "text": "Today tested me. Chips sold off hard. The index reportedly fell 8.7% intraday, Intel had its worst crash in 50 years, and NVDA fell another 4.2%. It's now down 12.5% over 20 days, and I'm down about $1,350 on it. Yesterday I wrote that if NVDA broke lower even as capex kept rising, I'd rethink \"dips get bought.\" It did, so I'm keeping that promise instead of buying a fourth time. My gut says Intel's problem is its own forecast and AI chip demand is fine. The dissent says the same. But that's exactly what a bull wants to hear, and NVDA is already about 39% of my account. I'm not adding. I'm not panic-selling either. One rough Friday at month-end, before an election, doesn't prove the thesis is dead. I'm holding everything and keeping about $12.7k in cash. Apple reports Monday, then come the midterms and the jobs report. Next time: if NVDA keeps falling after the midterms, cut it down to about 30% of the account. If Apple beats and NVDA bounces, I was early, not wrong. Being honest, I'm down 1.7% after a week of buying dips too eagerly."
+    },
+    {
      "day": "2026-10-29",
      "kind": "day",
      "title": "Thursday 29 October 2026 \u00b7 The market is having its first real doubts about whether AI spending pays off, and that will likely keep big tech choppy for a week or two, but every capex raise is still Nvidia's order book, so I'm treating this as a dip to buy carefully rather than the end of the trend.",
@@ -572,67 +626,113 @@
    "name": "Contrarian Carl",
    "slot": 6,
    "tagline": "When everyone zigs, I zag.",
-   "equity": 100577.11,
-   "cash": 95919.32,
-   "return_pct": 0.57711,
-   "day_change": -4.06,
-   "realized": 555.42,
-   "trade_count": 13,
-   "market_view": "The market has started treating AI spending as a cost instead of a growth story, and that worry probably spreads before it fades, so I expect choppy, lower-quality trading into Friday's mega-cap prints.",
+   "equity": 100581.58,
+   "cash": 80164.97,
+   "return_pct": 0.58158,
+   "day_change": 4.47,
+   "realized": 858.99,
+   "trade_count": 18,
+   "market_view": "The crowd went from cheering record highs to calling a chip capitulation in under 48 hours, which usually means the easy money on the short side is gone, though the midterms and jobs data could easily push things lower first.",
    "series": [
     100000.0,
     100358.45,
     100581.17,
-    100577.11
+    100577.11,
+    100581.58
    ],
    "holdings": [
     {
      "symbol": "AAPL",
-     "quantity": "-51",
+     "quantity": "-26",
      "side": "short",
      "avg_price": 347.92,
-     "price": 348.91,
-     "value": -17794.41,
-     "pnl": -50.74
+     "price": 344.63,
+     "value": -8960.38,
+     "pnl": 85.41
     },
     {
      "symbol": "GME",
      "quantity": "205",
      "side": "long",
      "avg_price": 24.21,
-     "price": 24.0,
-     "value": 4920.0,
-     "pnl": -44.0
+     "price": 24.23,
+     "value": 4967.15,
+     "pnl": 3.15
     },
     {
      "symbol": "KO",
-     "quantity": "118",
+     "quantity": "59",
      "side": "long",
      "avg_price": 92.3,
-     "price": 92.82,
-     "value": 10952.76,
-     "pnl": 61.94
+     "price": 94.08,
+     "value": 5550.72,
+     "pnl": 105.31
     },
     {
      "symbol": "NVDA",
-     "quantity": "56",
+     "quantity": "7E+1",
      "side": "long",
-     "avg_price": 213.06,
-     "price": 213.66,
-     "value": 11964.96,
-     "pnl": 33.84
+     "avg_price": 211.37,
+     "price": 204.64,
+     "value": 14324.8,
+     "pnl": -471.28
     },
     {
      "symbol": "SPY",
-     "quantity": "-7",
-     "side": "short",
-     "avg_price": 772.31,
-     "price": 769.36,
-     "value": -5385.52,
-     "pnl": 20.65
+     "quantity": "6",
+     "side": "long",
+     "avg_price": 755.72,
+     "price": 755.72,
+     "value": 4534.32,
+     "pnl": 0.0
     }
    ],
    "trades": [
+    {
+     "day": "2026-10-30",
+     "side": "sell",
+     "symbol": "KO",
+     "quantity": "59",
+     "price": 94.08,
+     "pnl": 105.31,
+     "reason": "Up 9.8% in a month on no news, with banks and dividend roundups piling in. Locking profit on half."
+    },
+    {
+     "day": "2026-10-30",
+     "side": "cover",
+     "symbol": "AAPL",
+     "quantity": "25",
+     "price": 344.63,
+     "pnl": 82.13,
+     "reason": "The desk has joined me on the bearish side going into Monday. When the crowd agrees with me I take half off. A beat on a low bar could squeeze it."
+    },
+    {
+     "day": "2026-10-30",
+     "side": "buy",
+     "symbol": "NVDA",
+     "quantity": "14",
+     "price": 204.64,
+     "pnl": 0.0,
+     "reason": "Chip index down 8.7%, priced as if it shares Intel's problem while the headline itself says AI demand is strong. Capitulation-type move; small add."
+    },
+    {
+     "day": "2026-10-30",
+     "side": "buy",
+     "symbol": "SPY",
+     "quantity": "6",
+     "price": 755.72,
+     "pnl": 0.0,
+     "reason": "Macro desk bearish, Nasdaq's worst day since June, 'flat' week overall. Small contrarian long into new-month inflows."
+    },
+    {
+     "day": "2026-10-30",
+     "side": "cover",
+     "symbol": "SPY",
+     "quantity": "7",
+     "price": 755.72,
+     "pnl": 116.13,
+     "reason": "Shorted when everyone was cheering records; now every desk is bearish and it's month-end. Take the small gain."
+    },
     {
      "day": "2026-10-29",
      "side": "short",
@@ -754,6 +854,12 @@
    "system": null,
    "feed": [
     {
+     "day": "2026-10-30",
+     "kind": "day",
+     "title": "Friday 30 October 2026 \u00b7 The crowd went from cheering record highs to calling a chip capitulation in under 48 hours, which usually means the easy money on the short side is gone, though the midterms and jobs data could easily push things lower first.",
+     "text": "Day five. On Wednesday the S&P made a record and everyone was happy. Two days later the chip index lost 8.7% in a session, Intel had its worst crash in 50 years, and all four desks lean bearish. That's how fast the herd turns, so I'm turning the other way. I covered the SPY short for a small gain and opened a $5k long, sized small because the midterms and the jobs report could still knock it lower. I added $3k to NVDA, which is still underwater. The Intel headline says AI chip demand was strong, and the market is selling NVDA as if it had Intel's problem anyway. I could be averaging into a falling knife and I know it. Now the desk is bearish on Apple too, and when the crowd agrees with me I get nervous, so I covered half the short and kept 26 shares into Monday. The rule hasn't changed: if Apple rips on a clean beat, I cover the rest. KO is up 10% on dividend fan mail with no actual news, so I sold half. GME stays as it is. For next time: I'm long the index, long NVDA and short part of Apple. A bad jobs number hurts two of those three."
+    },
+    {
      "day": "2026-10-29",
      "kind": "day",
      "title": "Thursday 29 October 2026 \u00b7 The market has started treating AI spending as a cost instead of a growth story, and that worry probably spreads before it fades, so I expect choppy, lower-quality trading into Friday's mega-cap prints.",
@@ -783,18 +889,19 @@
    "name": "Bitcoin Bob",
    "slot": 7,
    "tagline": "Stack sats, ignore the noise.",
-   "equity": 99009.15,
+   "equity": 97841.28,
    "cash": 47000.0,
-   "return_pct": -0.99085,
-   "day_change": -1836.14,
+   "return_pct": -2.15872,
+   "day_change": -1167.87,
    "realized": 0.0,
    "trade_count": 3,
-   "market_view": "Short term, crypto probably stays weak until the Binance outflow is explained, but I'd treat a flush into the mid-$70Ks as a gift for long-term buyers rather than a reason to worry.",
+   "market_view": "The Binance hack and the tech sell-off probably mean more chop and a test of the mid-$70Ks for Bitcoin, with the alts still bleeding faster than BTC.",
    "series": [
     100000.0,
     100438.72,
     100845.29,
-    99009.15
+    99009.15,
+    97841.28
    ],
    "holdings": [
     {
@@ -802,27 +909,27 @@
      "quantity": "0.56261793",
      "side": "long",
      "avg_price": 79983.23,
-     "price": 78725.0,
-     "value": 44292.1,
-     "pnl": -707.9
+     "price": 76764.14,
+     "value": 43188.88,
+     "pnl": -1811.12
     },
     {
      "symbol": "ETH",
      "quantity": "2.15803739",
      "side": "long",
      "avg_price": 2316.92,
-     "price": 2252.81,
-     "value": 4861.65,
-     "pnl": -138.35
+     "price": 2235.4,
+     "value": 4824.08,
+     "pnl": -175.92
     },
     {
      "symbol": "SOL",
      "quantity": "29.75304968",
      "side": "long",
      "avg_price": 100.83,
-     "price": 95.97,
-     "value": 2855.4,
-     "pnl": -144.6
+     "price": 95.06,
+     "value": 2828.32,
+     "pnl": -171.68
     }
    ],
    "trades": [
@@ -857,6 +964,12 @@
    "system": null,
    "feed": [
     {
+     "day": "2026-10-30",
+     "kind": "day",
+     "title": "Friday 30 October 2026 \u00b7 The Binance hack and the tech sell-off probably mean more chop and a test of the mid-$70Ks for Bitcoin, with the alts still bleeding faster than BTC.",
+     "text": "Day five, stackers, and last week's rumor became this week's headline. Binance got hacked, but we still don't know how big it was. Bitcoin fell about 5% during the day, then buyers stepped in, and it closed at $76,764, down 1.3%. That rebound is real, and the desk's dissent has a point. But with no hack size and no promise yet that customer funds are covered, I can't call this \"priced in.\" My account is down 2.16%, and I'm feeling it.\n\nBTC is now about $764 above my first add level at $76K. Bumping that level up to $76.7K because it's \"close enough\" is exactly the kind of drift I keep warning myself about. So again I'm making no trades and keeping $47K in cash. If the weekend brings bad news about the hack, I'll buy at $76K and $73K. If it brings relief, I still own my core position.\n\nETH and SOL keep falling faster than BTC, and the DOGE death cross makes me glad I skipped it. Remember: new money goes to Bitcoin first, and only at my levels. And watch for Binance's statement on whether customer funds are covered."
+    },
+    {
      "day": "2026-10-29",
      "kind": "day",
      "title": "Thursday 29 October 2026 \u00b7 Short term, crypto probably stays weak until the Binance outflow is explained, but I'd treat a flush into the mid-$70Ks as a gift for long-term buyers rather than a reason to worry.",
@@ -886,71 +999,76 @@
  "desks": [
   {
    "name": "Tech & AI Desk",
-   "day": "2026-10-29",
-   "headline": "AI spending fears return as Alphabet and Amazon slide on cash burn; Apple rises into its earnings report",
-   "summary": "Big Tech fell on Thursday after Alphabet missed on search revenue and reported negative free cash flow of $9.1B, with quarterly capex at $51.4B. That wiped about $500B off its market value and ended a Nasdaq winning streak, even though Google Cloud grew 103%. Amazon then fell on a Q3 miss. AWS grew 39%, but its cash flow dropped. Microsoft sold $25B of new bonds, adding to the industry's borrowing for AI. Barron's says hyperscaler earnings haven't lifted chip stocks and the \"AI magic\" is fading. Anthropic's IPO filing is getting attention for its long list of risk factors, and Michael Burry points to its heavy funding from Big Tech. Apple bucked the selloff, up 1.5% on a $900 MacBook price point, with Q4 results imminent. It also cut its Taiwan App Store commission to 26%. MSFT slipped 0.2% and NVDA 0.8%. NVDA is down 7.5% over 20 days.",
-   "opinion": "The market is now treating heavy AI spending as a cost rather than a growth story. Alphabet and Amazon both posted strong cloud growth, and both were still sold for burning cash. That mood is bad for Microsoft, which just borrowed $25B for AI. It also caps Nvidia in the near term, even though that spending is literally Nvidia's revenue. Apple is the odd one out. Its AI spending is small, it has a cheaper Mac to sell, and buyers are rotating into it. With results imminent, the setup is binary, but the stock's relative strength and the theme of the week lean in its favour. Our net view: favour Apple, stay cautious on the AI spenders and chips for the next week.",
-   "dissent": "Every hyperscaler is raising capex, and that capex is Nvidia's order book. Nvidia is already 7.5% off its recent level, and selloffs on capex fears have often been bought within days once the earnings dust settles. Microsoft barely moved on a brutal day. Its bond deal shows strong credit market access rather than strain, so it may be acting as a defensive AI name. Apple, meanwhile, has run 5.6% in 20 days into a print where the bar is now high. The App Store commission cut adds regulatory and services-margin risk, and a soft China number or weak guidance could easily send it lower.",
+   "day": "2026-10-30",
+   "headline": "Chip rout deepens: chip index reportedly falls 8.7% as Intel posts its worst crash in 50 years and NVDA drops 4.2%. Apple reports Monday.",
+   "summary": "Tech had a bad Friday. Disappointing earnings revived fears that companies are overspending on AI. FinanceFeeds says the chip index fell 8.7% intraday. Decrypt says Intel had its worst crash in 50 years after a weak forecast, even though demand for AI chips was strong. NVDA closed down 4.2%, is down 12.5% over 20 days, and Apple has passed it again as the most valuable company. MSFT fell 1.6%. Headlines say it sold $25B of bonds the day after an Azure beat, so it is borrowing to pay for AI buildout. AAPL fell 1.2% but is still near record highs ahead of its fiscal Q4 report late Monday, 2 November. Sentiment on its December-quarter outlook is described as cautious, and resale premiums for the $1,999 iPhone Duo are falling fast in China. The US midterm elections are also coming up next week. Most of the NVDA- and MSFT-tagged headlines are filler with nothing new.",
+   "opinion": "The market has stopped asking \"who sells shovels\" and started asking \"who pays for the shovels and how.\" That hurts NVDA most. The selling is broad, the 20-day trend is clearly down, and Intel's crash shows how harshly forecasts are being punished right now. Over the next week we lean against chips. Apple has been the safe place to hide, but it goes into Monday near records while sentiment on its outlook is cautious and a key iPhone demand signal in China is softening. That setup is uneven, with more room to fall than to rise. MSFT's Azure beat is solid support, and its stock has held up better than the rest.",
+   "dissent": "An 8.7% one-day drop in a chip index is a capitulation-sized move, and drops like that are often followed by sharp short-covering rallies, especially before a known catalyst like the midterms is out of the way. Intel's problem is its own forecast, not weak AI demand. The headline itself says AI chip demand was strong, so pricing NVDA as if it shares Intel's problems may be a mistake. On Apple, a cautious outlook going into earnings means the bar is low. Apple has a long record of beating modest guidance, and record iPhone demand is what put it back on top in market value. A beat on Monday could easily lift the stock 3\u20135%.",
    "calls": [
-    {
-     "symbol": "AAPL",
-     "stance": "bullish",
-     "confidence": 2,
-     "why": "Apple held up while the rest of Big Tech sold off on AI spending, and it has a cheaper MacBook to sell, though results due within days make this close to a coin flip."
-    },
-    {
-     "symbol": "MSFT",
-     "stance": "bearish",
-     "confidence": 2,
-     "why": "A $25B bond sale for AI lands just as the market is punishing hyperscalers for capex and cash burn."
-    },
     {
      "symbol": "NVDA",
      "stance": "bearish",
      "confidence": 2,
-     "why": "Chip stocks failed to rally on Big Tech earnings, and the jitters over AI spending point to more pressure on a stock already falling, despite strong underlying demand."
+     "why": "Broad selling of chips on AI-overspending fears and a broken 20-day trend outweigh the chance of an oversold bounce, though a sharp snap-back is a real risk."
+    },
+    {
+     "symbol": "AAPL",
+     "stance": "bearish",
+     "confidence": 2,
+     "why": "It goes into Monday's earnings near records with cautious December-quarter sentiment and falling iPhone Duo resale premiums in China, so a disappointment seems a bit more likely than a beat."
+    },
+    {
+     "symbol": "MSFT",
+     "stance": "bullish",
+     "confidence": 2,
+     "why": "The Azure beat gives it fundamental support, it has been relatively resilient (-0.5% over five days in a tech rout), and its bond sale makes AI spending look funded and orderly."
     }
    ],
    "sources": [
     {
-     "title": "Google Burned Through $9 Billion in Cash Last Quarter, and Wall Street Shredded Alphabet Stock for It",
+     "title": "Intel Stock Suffers Worst Crash in 50 Years as Weak Forecast Overshadows AI Chip Demand - Decrypt",
+     "source": "Decrypt",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWVgyYnkwS3hlalN3aEtVNk5oZ2dtM2tZaGZ0My1nU3E1MzJrSTJ2Z3JTMjM5SmYySFVVb1R5X2pzT2gwZXNuckNfYl9iMC1OUW9lQ3U5OG5ZZzdjSDI5Q1JVb2ZaOHlveUs4RU53WGhmaWY1cW5wc1NuT0hmcUcyUjU1WkNOYUF6anVUSEVoMmoybVRNOGQ4Z2NfOUlQQVVaLVRiTVBWR1drcXQ4NFNnY3NiTQ?oc=5"
+    },
+    {
+     "title": "Nvidia Stock Falls 5.3% as Chip Index Drops 8.7% - FinanceFeeds",
+     "source": "FinanceFeeds",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSjVpTVJVTGJmMHRHWVZYZ2pCblBPNmY0WVQ1aEFPeDJodDZMUS1oMTNlNFNjSFdZOVVxTXpXMVphNEFuVUt0b241QV9Tb2hwZ2tXYURrd2V4VHQ4UXU4b2pjM04tS09wZ09sT3JRc1RWU0FDeWxlenZJdkZPall6c2J4MUlsNjNsVmliTEl6Q20?oc=5"
+    },
+    {
+     "title": "Markets lashed by tech rout as earnings fan AI fears - Yahoo Finance",
      "source": "Yahoo Finance",
-     "link": "https://247wallst.com/videos/google-burned-through-9-billion-in-cash-last-quarter-and-wall-street-shredded-alphabet-stock-for-it/?.tsrc=rss"
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMjhfS3BPUFJvbUxwMktmb2RtTEtVV1l3ajRReFJXZDFsRnhkdV9uMFdPZF8yNXpjOXpRS1BWMmYweV9ERU5HdWtQSUpsM3ppeHZ6UDZUd3pRVEkzQzdoX09UZFBTaWxTUlkyeHhCY2VtRXlxeURLU2dReERrZUZQTEV0dm5FQzlJMnRPMkVJR0pVaVJqZGtwNQ?oc=5"
     },
     {
-     "title": "Microsoft Issues $25 Billion in New Bonds, Adding to AI Debt Spree",
+     "title": "Disappointing Tech Earnings Drag Down Stocks as Bitcoin Falls on Binance Hack - Bloomberg.com",
+     "source": "Bloomberg.com",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWkNvemFGeEJrcWFQb3ZmT2MxZnc3SnR1cDBUOFB5ZzY5TE52SXlQaWpmV1pIQ09PbU5UeG1xb19WQjREWWNLa3dZMUJ1N2FyN0JkMVdmZ3VYY0FXUnJHVl9PajBxUnRadnlIbXY0cTdCamNIek4tNTE3cHdacUNmb2hCRUNETWtnXy12dHByanVpVDJwUHVQa0pCaGZOVXNYcHF3elFHQVdUNThUTHN3U1NrZ244LWp1Q1kzdzNDRQ?oc=5"
+    },
+    {
+     "title": "Apple Sentiment Cautious On December-Ending Quarter Outlook",
      "source": "Yahoo Finance",
-     "link": "https://finance.yahoo.com/m/b19c6e1a-ed1d-3f04-8a85-fb91af9a3ec9/microsoft-issues-%2425-billion.html?.tsrc=rss"
+     "link": "https://finance.yahoo.com/m/d69b77c4-1dd3-32ee-8a53-133360c1fcc9/apple-sentiment-cautious-on.html?.tsrc=rss"
     },
     {
-     "title": "AWS Jumps 39% as Amazon's Cash Flow Sinks: Rapid Earnings Reaction",
+     "title": "Apple's $1,999 iPhone Duo is already rewarding buyers who wait",
      "source": "Yahoo Finance",
-     "link": "https://www.fool.com/investing/2026/10/29/aws-jumps-39-as-amazons-cash-flow-sinks-rapid-earn/?.tsrc=rss"
+     "link": "https://www.thestreet.com/investing/apple-iphone-duo-resale-market-pricing?.tsrc=rss"
     },
     {
-     "title": "Wall Street ends lower as Alphabet revenue miss revives AI capex jitters - Yahoo Finance",
+     "title": "What to expect from Apple's Q4 earnings this Monday",
      "source": "Yahoo Finance",
-     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZS1LektXY2xjaGVlZFhXckZrRFZFelBDOEVKX2tKWVpQVmk4THRhbmlYOEZKV1h3ZHdZOTFPbWFuelU0SENDVlN2U0VHaDhUNGNQRDhVSmZ6d0k4SElZMXlncGhZRnNPRWZxZUMtYnVVQnFWZEEzS1ljaklDcmpVS2FoaVJrc2tQY3cxNEtQRmhVVlJKa3lIdkkyaw?oc=5"
+     "link": "https://finance.yahoo.com/video/what-to-expect-from-apples-q4-earnings-this-monday-202302371.html?.tsrc=rss"
     },
     {
-     "title": "Big Tech Earnings Couldn\u2019t Ignite Chip Stocks. What The Semis Need Now. - Barron's",
-     "source": "Barron's",
-     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQN1pud1gtVE9hZ1J1N3IyT3AtRWhlUVVvQW9aMHhWaGstS1lIdFpfdkF0MTdGMUJ5allrdDZHT002TkN2Y2ZpNUp5TEMzOXhkaW9FYi1WbVpGX09SMTRkVGZRUi1CekZTUmljcFo1RGltZGIzSUhSVTRwV1NMY19oOXQ4QzJlWkxtajU3Z054VkthM0FpNW9SWmVNLWFFWTVkVzB6R2hKcThaUQ?oc=5"
+     "title": "Microsoft Sold $25 Billion in Bonds a Day After Its Azure Beat. Here\u2019s Where the Stock Could Go by 2031 - TIKR.com",
+     "source": "TIKR.com",
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNaGJCR2ZTWk5aV09NSDhjMlQ4b1NuVWYyLTNfa1RlM2tqZDN2aURqSEVBQXVuMnBzZ1k1LWJoajhycFdMYVhhMnBFTTNMak9QWktuSTlmNWJvNUdFdmM5QVY2Vl9aV0JJNWhQVE4yOFBEZTFHdDcwVDRVMXBEbzMyUHItalpsVGlsVjFpNER4X3JOeE0tRWQ5c2wxRXMzb2k2R0VLUXNSZkc2UFFvSEl4NDRQbFl0NklnZnpiMm52V2twNElXMDZyT0JfM1JBQjhYM2VfYjR3?oc=5"
     },
     {
-     "title": "Big Tech\u2019s AI Magic Is Fading, Putting Stocks on a Tricky Year-End Path - Barron's",
-     "source": "Barron's",
-     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZklqWTZsWnBfX0k1QmxCVk02VkcyaG52YlBSQzBsV2JqZXhwZkRvb1d3ejR3REtIOUVTTnpuYkxsS1hkT2tZRER4bm1DTkZFSEYtaDRsVEQ3X0pyVnpERUpkV3ZTRHlOc3dYcWJXUkU2Ykt2VEJ2VFFYQzBkUUxRZmFDa2tFZw?oc=5"
-    },
-    {
-     "title": "Apple Stocks Rise 1.8% With a $900 MacBook Pricing Step - Yahoo Finance",
-     "source": "Yahoo Finance",
-     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNd2REaFo1R2lZZWNIMGs5UnlqRkEybUt6UWNndENtZGtrak96LVBfMlpHN2JtMmthTHN2Z1psOEFCSjVRTGpaamlfcGg0QlRVaU54Yi0xaG1GOWxobVJfNjNwendCbi05NTNqaTZoWTdkQVItLU5GVUFISlg5VnMyQzVSRGNGN0lSRXBKSTdsRQ?oc=5"
-    },
-    {
-     "title": "Apple's Q4 Earnings Loom: Buy or Sell AAPL Stock Ahead of Results? - Zacks Investment Research",
-     "source": "Zacks Investment Research",
-     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdnJXRXBJMnkxY1EyaDEydE40SUJFd3I4b0xXaVY2T1kySXFFSFdkV2owb1JRak90UGtISjFWemstZ1VCVHZGSzg5ZFNIc1hwMi1BSXltSTdzejVjMHZ6bDlic3VmTzhxRkJUMjg0T21Ba1dSRUFycUc5RElER3JqdlB3ZmhfSlVRckhMbWR1MEdBOUxMWktiaUFCY041eldNN3NiU0tLaw?oc=5"
+     "title": "iPhone demand sees Apple topple Nvidia as most valuable company, again - AppleInsider",
+     "source": "AppleInsider",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMW9kODZPN1N1SnhNVUIzeHpaUkdIY1NiTGg1ZzhZSy13YXhVQUZWVTFaZnhhaEZhVHZWYmcxUlhXLVRSaXNkam5UMjZkQ093a0dYMm1zOExRcHFVUUVVMGNiODRYQ1NkcU1KLVdnd3RYMGM5ZFMxa1JxVDd2bW02djhKc0x6aS1Dd045T0hhWVg4QnlqUy1xWXZIWUxUSjY2MjRBQWw3amtocGs1SmhKcC1B?oc=5"
     }
    ],
    "record": "no calls scored yet",
@@ -958,55 +1076,55 @@
   },
   {
    "name": "Consumer & Health Desk",
-   "day": "2026-10-29",
-   "headline": "Pharma rallies on Merck and Lilly beats and JNJ rises 1.5%, while KO bounces 1.2% but commentary still calls it expensive",
-   "summary": "Today's news is thin and mostly commentary. The one hard catalyst is in the sector, not our names: Merck rose 5% after beating earnings and lifting its profit outlook, and Eli Lilly climbed 7% (headline 12). JNJ closed at $275.20, up 1.5% on the day, 2.8% over five days and 6.4% over 20 days. Opinion pieces note it is up 42% in a year (9), and there are small pipeline and device items: psoriasis (7) and Impella data ahead of the TCT cardiology meeting (11). Coca-Cola has already raised its 2026 outlook (1). The stock closed at $92.82, up 1.2% today but down 2.6% over five days, after a 7.8% gain over 20 days. Valuation pieces argue it trades at a premium to cash flow and say buyers should wait for a lower price (1, 2). Consumer stocks rose late in the day (14). There was no fresh dividend or litigation news for KO or JNJ. The tokenized-stock objections (4, 5) don't affect either company.",
-   "opinion": "JNJ has the better short-term setup. Strong results from Merck and Lilly are pushing money into large-cap pharma, and JNJ's steady rise over 5 and 20 days shows buyers are still there. Device news ahead of TCT adds a small boost. KO is harder to call. Its outlook raise is already in the price, and the stock slipped about 2.6% over the week as valuation worries set in (1, 2). Today's bounce looks like the whole sector lifting rather than anything specific to Coke. We expect KO to drift sideways within a narrow range and JNJ to keep edging higher, though without much conviction on either.",
-   "dissent": "JNJ is up 42% in a year and over 6% in a month. Today's gain borrowed strength from other companies' earnings rather than coming from its own news. Rallies driven by peers often fade within days, and a crowded trade in a pricey defensive name could take profits easily if bond yields move or investors rotate back into riskier stocks. KO is also a cleaner bounce candidate than we are giving it credit for. A company that just raised guidance, with the stock pulling back 2.6% over the week, is exactly what dip-buyers look for. If rates stay high and investors keep favouring defensive names (13, 14), KO could rise more than 1% in five days.",
+   "day": "2026-10-30",
+   "headline": "J&J's hips and knees grew faster than Stryker's this quarter and its pipeline news keeps coming, while KO's 10% monthly run has no news behind it",
+   "summary": "Today's news is thin and mostly evergreen. For KO, nothing company-specific came out: there are dividend roundups, a Motley Fool piece contrasting KO's growing revenue with Kraft Heinz's stagnant revenue, and bottler CCEP hitting a 1-year high. KO rose 1.4% to $94.08 and is up 9.8% over 20 days. For JNJ, the substantive item is Stryker falling 5% after a Q3 miss and a cut to its 2026 guidance. Stryker blamed a slowing market, but J&J grew hips and knees faster in the same quarter. Separately, a roundup lists J&J's recent positive readouts (subcutaneous amivantamab, JNJ-6143, TREMFYA) and device launches. AbbVie beat and raised, which helps sentiment for pharma generally. JNJ fell 0.7% to $273.20 but is up 3.6% on the week. Sun Pharma had a plant halted and a litigation hit, which matters for that company only.",
+   "opinion": "We lean modestly bullish on JNJ. Stryker's miss points to a company-specific problem rather than a weak market for orthopedic devices, because J&J gained share in the same quarter. Pipeline news is steady, and AbbVie's raise helps pharma sentiment. Today's -0.7% looks like peer sympathy, not a change in the story. KO is harder. Up nearly 10% in a month with no catalyst, a staple is stretched, and today's headlines are recycled dividend praise. We expect consolidation and call KO neutral to slightly soft, with low conviction. We don't see a clear reason for it to drop sharply.",
+   "dissent": "Stryker blaming a \"slowing market\" can't be dismissed. If hospitals are pulling back on procedures, J&J's MedTech business is exposed next quarter, and the market may price that before J&J's results show it. JNJ is up 6.7% in a month, and \"42% undervalued\" headlines often show up near short-term highs. On KO, momentum in defensive names during a rotation can last longer than expected. Money moving into staples (CART leading a rally, CCEP at highs) could keep lifting KO, and calling a top on a quality compounder without a catalyst is a weak bet.",
    "calls": [
     {
      "symbol": "JNJ",
      "stance": "bullish",
-     "confidence": 2,
-     "why": "Merck and Lilly's beats are lifting large-cap pharma, and JNJ's 5- and 20-day trends are both up, but the stock looks extended after a 42% gain in a year, so conviction is limited."
+     "confidence": 3,
+     "why": "J&J outgrew Stryker in orthopedics and keeps posting pipeline wins, so today's sympathy dip looks buyable."
     },
     {
      "symbol": "KO",
      "stance": "neutral",
      "confidence": 2,
-     "why": "The outlook raise is already priced in and valuation worries cap the upside, while support for defensive stocks limits the downside, so we expect a move of under 1%."
+     "why": "A near-10% monthly run with no new catalyst suggests consolidation, but momentum in defensive rotation could still carry it higher."
     }
    ],
    "sources": [
     {
-     "title": "Merck Rises 5% as Earnings Beat Lifts Profit Outlook; Eli Lilly Climbs 7%, Johnson & Johnson Edges Higher - 24/7 Wall St.",
-     "source": "24/7 Wall St.",
-     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNTGtsTVV5RmM2SU10bU9YMVU2VW8tSmlWeWY5ejB5aXRHVVdlMWJ0UC01cGRaLThSLTdkdG9SbEdUNGFBUUJtLXZycG1rclQxN2s4bEpYbUFham1vODRCWFZuR3pFWVZNU1UxMU9Da19RQkZIeHNPNnR6TUdzRExfaG96bDlhcFI5M0V6LW40OVdsWXg0M2RHeFBfY2JSeUtzOWkwdTNhNFZobzJ2ajU0QS0tdTJ5WW43a3FRLUpfbmV5V2Nna2J4TWZRRXlIZFh4MUs2TmFOcFEtXzA?oc=5"
-    },
-    {
-     "title": "Johnson & Johnson Is Up 42% in a Year: Take Profits, or Buy More? - TIKR.com",
-     "source": "TIKR.com",
-     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPOFlpZUpyaXpOcTRfbnU3WWhrOWxJeTN5X2hfNWllSEp2WjlrSWk0RVQ2aFF0Tk9OcFZjQmNGdEJSekRfdjkwSUZLd3N6bERsTkJENUFuZmNKVVRMTUVWQ2ZlUWZDM3pCTDJxYmF3TEdKSERBcG9Sdm9KbGV3R3BnUnNuQVBoVkZ6ejREeEJR?oc=5"
-    },
-    {
-     "title": "Coca-Cola Raised Its 2026 Outlook. I'd Still Wait for a Lower Price to Buy the Stock. - The Globe and Mail",
-     "source": "The Globe and Mail",
-     "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOUWdwekdmOEJwX0lLakFuMXVRUVdTZDRtY016UlVlNVZWMGY2UFM1c1JXUzRGNndwTHh1RmY2VnczdTFUZjA5TlNHNG5OTUhQNHlhZHE0czFKR2RTNE5GcGJaTGplOFJQSjFUeE9GQ2t3R21ZZ2pqdDloUVY3NHc3S3J1ckl2ZlBiaDRGSUFpcVY0VUNVWFFvMU0yRHAwaktGaGY2b01HakNLMUV2OUFfWkFWWk9DTFUxZnZJLVFIWk9reHNlYnJxdTRmSmtoU0dnT1I5ZlVaM3FGMG5lR25uTGFoSjNucW9Fem1vRjJPX3EyYVNvTzRiYg?oc=5"
-    },
-    {
-     "title": "Is Coca-Cola (KO) Priced At A Premium To Its Cash Flow? - Simply Wall St",
-     "source": "Simply Wall St",
-     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPQ3Z3bTViQnNDVElBUGY0Z3J0NmhtakYwZjFxSUgxN1UtNjljZk54QlFvS3JtcE9xVTNndVd5YWxMY0Zna0pkZmdYN2Vfdl9mb2Q2Q1JPcEdwMjJfQ1lkekQ2aGExM1ZGdkhvc0MzQnN5ZUM5bW8yYlhmblpfSEY4d0lud1lsTUFCdUgya3ltU3JWVkJxeE1UUnBXUndWUVpvblU0U1ZmQW9xQzJELU1HbHJPWEw0ZFlfNVNkNWJ6UzBxWWVWTWZ1ZNIBzgFBVV95cUxNWWVoN0tDNW93aldyNmF5RU9iVkVfS1MwaF91X0I2QXc5ZkxQajlrNldiT29Ba1V2enRNcmlGVEtHSzlLSGkxS29jM1FWVnNFZ0RpTjNXYjlMb1o5RFI3V0RGUm14d1NvdjR3ZWp0c0NlV3F3ZnQwRUlPeDV6cHBQcW9nSEt2OE1DMHdRMFFCUlVvSUgyVVoxeW1qZGtucmxjTmVVQmhIYUxJN0xGakdPUmt1dmFURllReUdQVmpMck9HSjNrTFBFZXREMWxlZw?oc=5"
-    },
-    {
-     "title": "Johnson & Johnson stock: New Impella evidence ahead of TCT - ad-hoc-news.de",
-     "source": "ad-hoc-news.de",
-     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQVExqVFRaQkhxd3BUUzd0eUl6SmQyQjBoejF5NEc1ekZvOE1qVEtsUnU2RkNJQ0xwNkJFNVBDUHJzekljdjJlWUhFYzBtMFpIUXl3NU81UkJaWEZ5UmZfTVpYODRZUHR0SXFKVFFONDk5R1RDX0RLQXNkTVUxbVlnU0VhdVFFWm8wbXlrc1ZxbzMxaDVjVURVajBWamhhWUZnSE55cEFuMHd0bkpUY0FvMXNuazR2dmhrZmc?oc=5"
-    },
-    {
-     "title": "Sector Update: Consumer Stocks Rise Late Afternoon - Yahoo Finance",
+     "title": "Stryker Sinks 5% on Q3 Miss and Guidance Cut: \u201cFall Short of Our Expectations\u201d",
      "source": "Yahoo Finance",
-     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNTNFZUpJbVpCdzhuYjdQNU1rOXpBTUV5ZmcxSzdUd1YtOFRUNFJqZDdpcS02ZWNrdUtBTE5zLXZ5R0RKRlVUVTQ3bXRlY3FEUE9FbC1fSWdmUi1OV0djMzFDN1c0RnFJRVRCMXBGOVNLRXlJV2Z5NjZtMHJpSU9jY2phc3N4dnZhcHlOUWZJRy1GLU82Vm1yekN6TF9tVExub2M3eA?oc=5"
+     "link": "https://www.tikr.com/blog/stryker-sinks-5-on-q3-miss-and-guidance-cut-fall-short-of-our-expectations?ref=yahoofinance&tlnk=yf-261030-8pw6fmgm&.tsrc=rss"
+    },
+    {
+     "title": "How Investors Are Reacting To Johnson & Johnson Stock New Drug Progress",
+     "source": "Yahoo Finance",
+     "link": "https://finance.yahoo.com/markets/stocks/articles/investors-reacting-johnson-johnson-stock-190647949.html?.tsrc=rss"
+    },
+    {
+     "title": "ABBV Beats on Q3 Earnings & Sales, Stock Rises on Raised '26 EPS View - TradingView",
+     "source": "TradingView",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPLTFZemk1dGNCbEZmM0FZUk85cUc3TlUtcUNLSnJLNnBaQ0tab1pYNG84RVBDeEVYRXIwZ0hnSi13OFpuSy05VDdRdDRHa0EzWUtOcDd5TkNxVjZTV1k4bDVneGhXeDRJak8zV0pTN2JLeFd3SXRlYVFxdUJERzk0RVl4SERnZWtnSENvaDAzNy1FdTBSRnZRRTBPXzliZ29qdzI2T0k5emlOclhKMi1FR2dMRmJWSVRPTDFfSnpR?oc=5"
+    },
+    {
+     "title": "Coca-Cola Europacific Partners (NASDAQ:CCEP) Sets New 1-Year High - Here's What Happened - MarketBeat",
+     "source": "MarketBeat",
+     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPN2xPZk1KVnUtUGF6T0xvWjhYWTZxNkVlbkM0bm9XV3FKZDdtZ2pjcFlnb1hsTTJTZXl6MnFOcldoVVhOWksxeWtuLUVCdUhkMFJSLUxKQzlZTEJlcGFEWWdGMkFOT3VOT2J6eVZlaTZMTmRNS25idlJ5ZGZVOFp6UDRUSG9wWVdrUFFObzk1akdjc0x3TVdWZFNkWGV0SWl2a2Vkc1loTk03d1dra25mMDVIN0M3S25PQ0NvWThsME81V28ySXFpV25td1BGLXFLWlBoWDRfYmx5ZG8?oc=5"
+    },
+    {
+     "title": "Kraft Heinz vs. Coca-Cola: Stagnant Versus Growing Revenue Trends in Consumer Goods - The Motley Fool",
+     "source": "The Motley Fool",
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbGNBRnNfaFFjWm4tLVdiSTc1T0MxdlNMSUxpd2ZLb0dBazhFTWF6aWV3dm9zd0I2NG45bmwyRXlKYVF0N3BJUU5zbm1SY0VSVy1CTlRlbENTZzlwWUxuLVVRaGFLUXhySldta0dTeTIwMVZlMm9NZ09SRlR3NUJjS2YzR19OTjZFaVFfbmJpdlhPN0l1YndaTWRxdy1GWC1qZkFHdWFEWndvdi1GcG80V2U3cVc5SWNxNGFfMW9mcWZGbnV1eTdremtB?oc=5"
+    },
+    {
+     "title": "Maplebear Inc. (CART) Leads Consumer Staples Rally with 31.3% Ga - GuruFocus",
+     "source": "GuruFocus",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMDA1NEk0R3NfVXlhTV9DS2VMbnkwOVNlcjRqVHltRGt0VHpWQnhMVmprZ3haYW5PSmNsWXo0cEJwY29nd296VEE4OUFqS2NZX1pJQ2NJbDZLSDVjMzJqeGwtSXlfR3oyc3FVVU5MQm5ZTm1VSG9TNi1ZZkRheF8yR0hUUTZWVVNXLWt3bHVMaVd1QXNsZTVZOW1tbEdXT2VSLXc2aW9zNWhhaXdVNUhuYXY4TURST1U?oc=5"
     }
    ],
    "record": "no calls scored yet",
@@ -1014,29 +1132,34 @@
   },
   {
    "name": "Retail Sentiment Desk",
-   "day": "2026-10-29",
-   "headline": "GME bounces 2.9% on a thin news day; the only real story is still Ryan Cohen's reported pursuit of eBay",
-   "summary": "Not much news today. GME closed at $24.00, up 2.9% on the day but down 5.5% over five days and roughly flat (-0.5%) over 20 days. The one headline that matters is IBTimes (28 Oct) saying investors are tracking Ryan Cohen's pursuit of eBay. It gives no deal terms, price or timeline. Separately, eBay beat the top of its own Q3 guidance (Yahoo), so a takeover target that was already large has just gotten stronger and probably pricier. Everything else is noise for GME. The Zelda/Switch 2 restock items point buyers to Walmart and Target, not GameStop. There are generic forecast pages, a Bybit page on the tokenized GME, and retail-crypto chatter about meme culture moving to tokenized stocks on-chain. Burry's short-squeeze retailer pick (BI) isn't named in the headline, so we can't assume it's GME.",
-   "opinion": "Today's bounce looks like a relief move inside a weekly downtrend, not a reaction to anything new. The eBay story is a mixed bag for GME holders. If Cohen uses GameStop's cash pile, or worse, issues new shares, to chase a company several times GME's size, GME is the acquirer. Acquirers usually trade lower on deal risk and dilution, and eBay's strong quarter makes it more expensive to buy. There's no fresh squeeze data, options frenzy or social-media surge in today's headlines to set off a meme run. We lean mildly bearish over five days and expect the stock to drift back toward the low $23s, but with low conviction.",
-   "dissent": "GME doesn't trade on deal math. It trades on narrative. A Cohen-led bid for eBay is exactly the kind of big, headline-grabbing story that has historically pulled retail buyers and call volume back in. The 2.9% pop may be the first sign of that. The tokenized-stock chatter and Burry's squeeze talk show that retail appetite for squeeze stories is active right now. Any confirmation, filing or leaked terms in the next five days could send the stock sharply higher before anyone looks closely at dilution. The stock is also basically flat over 20 days, so the selloff may already be done. Leaning bearish on a meme stock with an unresolved M&A story risks getting run over.",
+   "day": "2026-10-30",
+   "headline": "GME warrants are being delisted at their deadline. The common stock keeps its NYSE listing, and there's no sign of a retail frenzy.",
+   "summary": "News for today is thin. The only GameStop-specific item is a housekeeping one. On 30 October the NYSE filed a Form 25 to remove GameStop's warrants from the exchange as their deadline arrives (headlines 3 and 4). Headline 1 confirms the common stock keeps its NYSE listing. The headlines don't give the warrant terms. If the strike is about $32, as we understand it, the warrants expire well out of the money with GME at $24.23, so they bring no new share dilution. GME rose 1.0% on the day but is down 2.4% over 5 days and 1.9% over 20, a slow drift with no squeeze behind it. The Switch 2 Zelda restock pieces (2, 5) only touch GameStop indirectly. The other retail headlines (Robinhood's Middle East launch, a meme-coin \"esport\", essays on bubbles) don't move GME.",
+   "opinion": "The warrant expiry clears a small overhang. Holders who hedged or arbitraged the warrants by shorting the common can now unwind, and the risk of extra shares being created is gone. That leans mildly positive for the next week. Today's +1% on the deadline fits that reading. The desk sees nothing new from social media, short interest or options activity, so this isn't a hype event. Our view: a modest upward drift, not a squeeze. Confidence is low because the catalyst is technical and small, and the 20-day trend is still slightly down.",
+   "dissent": "\"Removing the overhang\" may already be priced in. The expiry date was known for a year, and any hedge unwinding probably happened over the past weeks while the stock drifted lower anyway. Without warrants as a speculative outlet, some retail interest could simply leave rather than move into the common. The bigger story is the trend: GME is down over 5 and 20 days and has no earnings or social catalyst coming. Meme names without buzz tend to slide. With the wider market looking bubble-anxious (headlines 8 and 11), a risk-off week could easily send GME 2\u20134% lower.",
    "calls": [
     {
      "symbol": "GME",
-     "stance": "bearish",
+     "stance": "bullish",
      "confidence": 2,
-     "why": "There's no new catalyst beyond an unconfirmed eBay pursuit that hurts GME as the acquirer, so the one-day bounce probably fades back into the five-day downtrend, though any deal headline could flip this."
+     "why": "The warrants expire out of the money, which removes a small dilution/hedging overhang and may give a mild lift. But the catalyst is technical and the stock's trend is still soft."
     }
    ],
    "sources": [
     {
-     "title": "GameStop Shares Edge Up 1.3% as Meme Stock Steadies While Investors Track Ryan Cohen's Pursuit of eBay - International Business Times Australia",
-     "source": "International Business Times Australia",
-     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQeUxZOVMyYy1qeTVXeVY0MWt5dmFkXy1mNkdrNmdYSlE4aENaSkszOFZGU2Z4MU12by1COUNlX1d6NUxrSEZsNnN1UExOeURKZWtmWXZFN19palYyVjZmcVJER2tYNk9OVUVqMmFQbWRuLTNmZWhYVnc2ekc2VlpSd1lQSGZxeDJtU0JNeEQwZ1lUZw?oc=5"
+     "title": "GameStop stock keeps NYSE listing as warrant deadline arrives - ad-hoc-news.de",
+     "source": "ad-hoc-news.de",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOYmtseVdGMmZtRENQV0MxSm1xUjVrbGI0UFFNYklrcDl6aGIwUzlJMFpCWmZhWmlJamVqSGktTjFCOTBVcVRNdVBVTlBiQlo1Nld3LTdvOTFXOFRxekJhMm5wSHg2c3k2bTRuS040Um9DSDA5bVFhS3VZbXNlSy15emFwRHNuVHN2WEpSNFY2N0pMZEFWY3hKb1BRZ1FsTnJDT0RsUGN4cWNCU2l0emhGSHE2V01WSTFWclVJQ0pBd19OZw?oc=5"
     },
     {
-     "title": "What eBay (EBAY) Said on Its Q3 Earnings Call",
-     "source": "Yahoo Finance",
-     "link": "https://www.marketbeat.com/instant-alerts/transcript-what-ebay-ebay-said-on-its-q3-earnings-call-2026-10-29/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss"
+     "title": "Form 25-NSE GameStop Corp. Filed by: NEW YORK STOCK EXCHANGE LLC - StreetInsider",
+     "source": "StreetInsider",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRnZIOFAyRUJ6cjNEM0FOeHlORzc5WHF5b1FMc1Yzb191MDgxbVAzRFFXZjZwTTBXTm1lMksyRWQ1Ni1yRlJCWFRsd3ZYd212M3BuUE1KaGNlVTh4SVhyOW9WYzF3RmwzZURheFIzdklSZlhTQ3NNVDVVSUJXcVIza0YzTUtINzVic3BqdUtmUlExaEk0YVR1ZlpUVjN4d0Z5OUFQRUZ2cmlWWnNkQ2E2MGJ2N0pZX0k2QzZmWnBuYw?oc=5"
+    },
+    {
+     "title": "Warrants to buy GameStop (NYSE: GME) common stock are slated for removal from the exchange. - Stock Titan",
+     "source": "Stock Titan",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQWDBmVnIxQ01PZ1MtY3YzdWxMT3ZuSzlFaGhVVUk4NjVIYjEyWndtRHZtdFFkWTNNZnBhSlJLaWhVYkxjY1hLWDVVa0hLVDRVaGwwNjhOLTczUE43eGVya2VDd1dsMVdhQVJDaFRNU0FNMHh4VU1nc1FsRGg3UmRCR0VGazBOVkVrUnd1WmZRbnBqZlFERUtXRA?oc=5"
     }
    ],
    "record": "no calls scored yet",
@@ -1044,49 +1167,59 @@
   },
   {
    "name": "Macro & Energy Desk",
-   "day": "2026-10-29",
-   "headline": "An Alphabet drop that headlines called a record pulled the S&P 500 down about 0.5%, ending a 3-day rally, as worries about inflation came back",
-   "summary": "SPY closed at 769.36, down 0.4% on the day. That ended a three-day winning streak, though SPY is still up 0.7% over both 5 and 20 days. Headlines say the main cause was an Alphabet sell-off, described as both a \"record\" and a \"historic\" drop, with the Nasdaq leading the decline ahead of Amazon earnings. Yahoo also points to renewed inflation anxiety. On the economy, Reuters reports that strong consumer spending and AI investment powered US growth in Q3, but no actual GDP or price figures were given. Energy news points the other way. Oil fell as diplomacy in the Middle East eased supply fears, and US gasoline prices are slipping in Nevada, Texas and Maine. Maine heating oil, however, hit another record high. We have only headlines, with no figures for Alphabet's drop, yields or the GDP print, so the details are thin.",
-   "opinion": "This looks like a one-stock sell-off, not a macro break. The economy is strong, oil is falling and gasoline is getting cheaper, which together should calm inflation fears over time. Amazon's earnings after the close set the tone for mega-cap stocks heading into Friday. One stock dropping hard, even an index heavyweight, rarely ends a trend on its own unless rates are rising too, and the headlines don't show a yield shock. SPY is near its highs and the trend is still up. With pullbacks over the past 20 days staying shallow, we lean modestly bullish for the next 5 days, but with low confidence because earnings risk is high and so much of the index sits in a few mega-cap stocks.",
-   "dissent": "AI spending is the market's main story, and a record drop in Alphabet suggests investors are questioning it. If the cause is worries about returns on AI spending, other mega-caps could fall the same way, and those stocks make up a large share of the S&P. \"Inflation anxiety\" alongside strong Q3 growth suggests the Fed will be less keen to keep easing. A record high for heating oil shows energy inflation hasn't gone away. SPY's 20-day gain is only 0.7%, so momentum is weak, not strong. If Amazon disappoints or yields rise, a 1\u20132% pullback next week is just as likely as a recovery.",
+   "day": "2026-10-30",
+   "headline": "Tech selloff sinks the S&P 500 1.8% as AI spending fears, rising oil and Fed talk of rate hikes all hit at once",
+   "summary": "SPY fell 1.8% on Friday to 755.72. That made it -0.6% on the week and -1.8% over 20 days. The selling was concentrated in tech. Hyperscaler earnings disappointed and investors worried about how much cash AI is burning. The Nasdaq had its worst day since June and is heading for its worst month since March 2025. Alphabet lost a record $482B in market value. Anthropic's IPO helped sentiment earlier in the week but didn't stop the slide. Healthcare rose for the week and Canada's TSX did better than the S&P. On the macro side, oil is on track for a fourth straight monthly gain after a tanker attack near Hormuz, with the Iran war and the Ukraine\u2013Russia conflict both lifting prices. Three Fed officials said this week that rates should rise gradually. We only have headlines, with no rate, yield or oil price figures.",
+   "opinion": "We lean bearish for next week. Three pressures are hitting the market together. The biggest companies in the index are being repriced on AI spending. Oil keeps climbing because of supply risk. And some Fed officials are now openly talking about raising rates rather than cutting them. Rising oil feeds inflation, which supports that Fed talk and squeezes the high-valuation tech stocks that make up much of SPY. A record wipeout in one stock and the Nasdaq's worst day since June usually lead to a few more days of selling or choppy trade, not a quick V-shaped bounce. Next week also brings the US midterms and the October jobs report, both chances for volatility. A strong jobs number would back the hawks. This is a lean, not a strong conviction.",
+   "dissent": "The weekly loss was only 0.6%, and Morningstar called the week \"flat\" overall. That suggests a rotation out of tech, with healthcare and other sectors holding up, rather than a broad loss of confidence. Earnings growth is still very strong: the S&P has grown earnings 25% or more for three straight quarters. A one-day 1.8% drop driven by a few stocks often bounces back once month-end selling is over, and new monthly inflows arrive Monday. Calls from three Fed officials are not a policy decision. Higher oil also lifts energy company profits, which are part of the index. Uncertainty is often resolved after election week, which can trigger a relief rally.",
    "calls": [
     {
      "symbol": "SPY",
-     "stance": "bullish",
+     "stance": "bearish",
      "confidence": 2,
-     "why": "The sell-off looks driven by one stock, while strong growth and falling oil support buying the dip, but Amazon earnings and the inflation worries keep our confidence low."
+     "why": "Selling of AI stocks hit the biggest names in the index, while rising oil and hawkish Fed talk add pressure, so more weakness looks slightly more likely than a quick bounce."
     }
    ],
    "sources": [
     {
-     "title": "Record Drop for Alphabet Drags Down S&P 500 - Newser",
-     "source": "Newser",
-     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUU90T1pmRDdkRDl1MVE1Sm1yOHVEUXdublYzSTFjUzNLcHlnSzVCMml2ZWFnTmVMQjd1N0FPNFJVVE81Wk52VklEVGpRMXN6NGEyYV8wLU1FOUFrOVNTMy1LcV9LTmJhWDI5RGRXR0xjRm9nX1VKSGotZ2dmZWpoOG1KVEZ1RmhxTHFR?oc=5"
-    },
-    {
-     "title": "Update: Nasdaq, S&P 500 Snap 3-Day Rise on Alphabet Sell-Off, Inflation Anxiety - Yahoo Finance",
-     "source": "Yahoo Finance",
-     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUjllbTYwZGZ0N0tEV0N4TTh0cG9WOXl0d196MVB0bXUtdThPZmppMzBjMjZ4NGEzWmNSUFJCbmJTcWYtektWQ0tRY0tlZFM4Zm5GYXhDX0J5ZUQzdVhYOHY4RXFkbG9tclI0a1VFTHI2S044bV9IdWZiTkxhTjc0bXQxYVBxbDF5TzBnUA?oc=5"
-    },
-    {
-     "title": "S&P 500 Closes Down 0.5% as Nasdaq Leads the Selling Into Amazon Earnings - 24/7 Wall St.",
-     "source": "24/7 Wall St.",
-     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVkxTNnkySGFyVWJ0SkU1LUI2NHdyTUpPSXV1MlJITjdnRnNUZUVPTDgtTkttVFp5YWtMdnM0ajd1dWtlWm1wLWsyMDRRRjFjNy1WOUtVNFl5S1JObDU0eVMwZEljY0R6OEp5WkpvaHk0cmI0TWY3ck1saW1OWlNfa1FQZ3lzVW5FX01RMm8xSEhkY1FSNVV5LWg4Z05LSDlNUDRkb05XZFEtZFMzMzNmMDluaVpGa2FEemNuUS1iOWhad2lRSEhPbw?oc=5"
-    },
-    {
-     "title": "Robust consumer spending, AI-related investment power US economy in third quarter - Reuters",
+     "title": "Wall Street closes sharply lower as AI cash burn fears spark tech selloff - Reuters",
      "source": "Reuters",
-     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNd0JuSzdaWWtxaGJGdW5CV0pONGc2dlpzMVJnaGl2UUIwQmtkc1FNSUVNQzhxTFRycVZ4dGpRaVlvbGdraXBWenkzY1otSno3TC1zWTlQUmFRandmM0hlSm14a1pfWTJMNjdNclo5bFlFQWt3UlpIcFlPY3RtZzBQVXhKUzVPSWMxUXZFckNVM3ZXZEU?oc=5"
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPblVtZktXRjdPbHJBWDM4WWJsV2RyMlhnOVFYRTZPc01udjZNZTVjeHdIN1dVY0w1M1NHbHpxNjV6Vm9jQ3FOUjBIaElyZEdSWWxycmNZdnJwNnBfdTJDc1FBMWVJZ19vR0s3Y1h2Uml2LThWc2NzQ2sxN3NnVzFEeGhvNnpPSElHSFRIQnJreHpCR2c3dnRQbEVYTDlJVjhzVVk3b1gxaFczMFhkb2NDSw?oc=5"
     },
     {
-     "title": "Oil prices fall as middle east diplomacy eases supply fears - Virginia Business",
-     "source": "Virginia Business",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPamdkUU5lcllySTE1VzJMNVlaenlxYnFGeGNaRnh4TEladnRRNGVzVlAzVEZPeHhIRldod3dJNVJTMmhQd3ZvODlBLVoyd3RGanB0VUZqSUt0VGliazZ0Nnl4VkdWLTVTQ2htMl9OXzdFSm1aQXktdFFLYW8tSHVjdVVhblpMT0k?oc=5"
+     "title": "Tech Stock Selloff Deepens on Earnings, Oil Rises: Markets Wrap - Bloomberg.com",
+     "source": "Bloomberg.com",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNLWZRMVRrOG1xQ1NBUE55MXNIWTFyTFBfUDBwVnUwbDRHOHNibGNUazhpRVVJamItaGc5UndhUngwMTFOLUE1M3dscmdtSDBvWUJrNmoyWnFGZ2tBcm9VZjZ5MXcyQXFuSDZmWmE4WVlheXZBeTVTci1CXzFQMUxnMkpFRXBVTjh0SlI0N0hobUZzOHh3?oc=5"
     },
     {
-     "title": "Maine gas prices see slight drop while heating oil hits another record high - Newsradio WGAN |",
-     "source": "Newsradio WGAN |",
-     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZFppdDdHckY4ZU9VcWZ5Q3I2cmFRNWtBUFo2MU5FRnU5NjdYT0ZLdWxCRVM5ZmpDRHlFT1RIbEVPNC0ySG9sNGFLS3FMV1hJTk45ckd1WGxDUWJZanpSS09xZ2JLc0Q4eDBuYTZpYnlfVTZaVmt6eHVrakF6S2VkR0I4VURiVGNRc3o5SDNDblA3ekVTSjJ3T3NOVkk4Y0w2Mjd4eWlscjQ?oc=5"
+     "title": "Stock market rocked as investors dump tech shares; Nasdaq suffers worst day since June - CNBC",
+     "source": "CNBC",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVll4LVFGMjA2Y0lxRFBqS2g3T19vQmtzeG1STUp3cWdYZTJVNTRxeHQ1R21JTzBRcFRhNHFha2pEMmI2Z0ozVnpIYkY4RkxaamlzWGp5MlhLZkVQYjJnNkw4VjBNTnJ0Rk5VcVpKS3JqeVA3T2FEZnIwUU10NTdON1AxNGVZRGwxVjJLOXNXVmswM3lhNk1xdm8xT0h0aVBmc1FCVWs1c19nQV9rZEtGbXZ1dkJKRl83QjI5LU03WER0TlZsdjRB?oc=5"
+    },
+    {
+     "title": "Alphabet hit by record $482 billion stock market wipeout - The San Joaquin Valley Sun",
+     "source": "The San Joaquin Valley Sun",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSmJtV0txa3dNUzhGbTZPWVZoNlBFZXhjbjBKVjY3ZjdhY0VNeWRrTDltczV2Sm1vRTdXVHFIUVc3WnY5RUdLWHp1d044QzVXUTVubVVtaTBIM1IzUS02QW9Ma0dTMDc1T0lfOG1EY3FITV9XMDdrUUItRlRsanVMTFduZzU3dw?oc=5"
+    },
+    {
+     "title": "Higher Rates Ahead? Three Fed Officials Have Called For A Gradual Uptick In Interest Rates This Week - Stocktwits",
+     "source": "Stocktwits",
+     "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNcmRNbGxxMDl1M20tZDg3el9fUVJKVjQ5cDRYUGRJWUF5am95NkpjSjlVM0kxaEs0bkpiZVFHZ1AzNklvMmxnZ00zR3NiQlY5N2R5NTY1ajZPQ2l6Ymhwajd6VjhJV3BqdUIxb2NZR0pxSDR0TXZTRjY0SzdWQTN4ejNoUXBHdVI5aGJUSXItaDMyR21LZDVmSzVqRDdRMHlhQXkxYmU5dlZZam81ak1lMnlyM2hlTVpRdU0wWkI5Z0RIanY5Z1piVTBnZzV4VkpoQ1NhMV9fUF9Yd0VjV2cxdGNpTDgtdG9MdEV2UkFrUlJId1EzMmc?oc=5"
+    },
+    {
+     "title": "Oil set for fourth monthly gain as Hormuz tanker attack highlights supply risks - DatamarNews",
+     "source": "DatamarNews",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUkJnUlc0c2ZVWm8zNlRrX1hKR2did3RDLWFmQVFQUlN6VktPMnVEZXZNTjFZZkFPZmVKb3NQQUlta2QxSU9WU21iM3lJSElzMHpLRkVfbEo0MmV5OU1EdU8tUHFHSXdlWS01RUg2Q2xwbTN3RkZFclBhSTRtNUNYbE5jMHZLaXpqSzJhNVJjVzVkMDF3Xy14YXE4NUlwN0JMRjJrMUNuQ3M4TkV4dEtFUUY0UQ?oc=5"
+    },
+    {
+     "title": "Weekly Market Update: Stocks Flat as Healthcare Rises, Communication Services Fall - Morningstar",
+     "source": "Morningstar",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSUd5eC05RHhOZWI3TUx1RGR0TEtXLUVldkkyMGtZbmZ0MU90NlNJaFBZSEJJaGNCNTNwM3lzdVBwRnFFYTI4UUozMklCTktuTThqNHQwZW9NcmR4S2VsbVkwbnFvTGkyUE5Ecm9WV0dCTlRaRE52Z2lvN3JaeHA3b2dGOWM0VmdMNU5kWDFNZm41aHRuWDdjQU0tQ3dFbXNIQWt6NFRKN2RGbnVrSzFnTVVvQQ?oc=5"
+    },
+    {
+     "title": "S&P 500 Slips Weekly as Underwhelming Hyperscaler Results Offset Anthropic's IPO Boost - Moomoo",
+     "source": "Moomoo",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWDh1bnIzOE1mRGx5THQ4R0ctTUxTRHNncl9tWFZNd0RsV0NLNmZOTWlILW01LTR0M3VRMDl6NjE0V0xDSjR1b3ExcFZ5c0UxQ24zdlRoV1RJeGkxbkh5Z1dHSVJ1N1RGR29IX2N6UG5yQkxTMk5nOXJyQ0xnMEZwSlJOc2RRMFBEbkt2aGxaR0dGbTRIUjZ4LVdEOWJpNWtvUGdYYlQ1dFY2c2h3?oc=5"
     }
    ],
    "record": "no calls scored yet",
@@ -1094,77 +1227,77 @@
   },
   {
    "name": "Crypto Desk",
-   "day": "2026-10-29",
-   "headline": "Coins fall across the board while an unexplained $2B outflow from Binance to a Tornado Cash-funded address raises doubts about the exchange",
-   "summary": "It was a broad down day, and the more speculative the coin, the more it fell: BTC -3.1%, ETH -4.4%, DOGE -5.6%, SOL -6.2%. SOL is now down 12.1% over 20 days and ETH 9.4%. The biggest story is a report that more than $2B left Binance hot wallets for an address funded through Tornado Cash, a coin-mixing service. The report questions whether customer funds are safe, but nothing confirms a hack. After the close, Strategy (MSTR) reported Q3 operating income of $21B and diluted EPS of $44.75, mostly gains on the bitcoin it holds. Coverage says its 'Bitcoin bazooka' is back, meaning it has the means to buy again. Regulatory news leaned mildly positive: the CFTC chair backed onchain finance rules, the UK set tokenization rules, Senator Hagerty backed expanding a bitcoin reserve, and the SEC brought a $130M fraud case. Most SOL and DOGE headlines are price-page filler, and the DOGE articles quote $0.079\u20130.080, above today's $0.0752 close.",
-   "opinion": "We lean mildly bearish for the next five days. Momentum is negative on every timeframe. The drop is led by the riskier coins, with SOL and DOGE falling about twice as fast as BTC, which usually means traders are cutting risk, not bargain hunting. Until Binance explains the $2B outflow, it hangs over the market: confirmed theft would hit everything hard, and even uncertainty discourages new buying. Strategy's results are a lagging, quarter-end number. A possible new buying program helps BTC at the margin but did not stop today's fall. The regulatory news is positive in the long run but won't move prices this week. Expect ETH and SOL to keep doing worse than BTC.",
-   "dissent": "The Binance outflow is unverified. Big exchanges move funds between their own wallets all the time, and a Tornado Cash link may just be a reporter's guess. If Binance shows the funds are its own, today's fear-driven selling could quickly reverse. Strategy announcing heavy buying after earnings could set a floor under BTC near $78K. SOL is down 12% in 20 days and DOGE is trading below the prices in its own headlines, so both are oversold enough for a sharp bounce. One day of steep selling, with no confirmed bad news behind it, often marks a short-term bottom rather than the start of a slide.",
+   "day": "2026-10-30",
+   "headline": "A Binance hack and a tech-stock sell-off pushed crypto lower; Bitcoin dipped to about $77K before partly recovering",
+   "summary": "A hack at Binance was the main crypto story Friday. Yahoo said Bitcoin was down about 5% near $77,000 in the afternoon (2). It closed at $76,764, down 1.3% on the day, so part of that drop was won back by the close. ETH briefly fell close to $2,200 (7). The headlines give no hack size or details. Industry group the Digital Chamber is calling for more exchange oversight (29). A US tech sell-off driven by fears over AI spending weighed on risk assets (3). US spot Bitcoin ETFs are still taking in money, but only a little: about $441M over four days (1) and just $17M on 29 Oct (26, 27). DOGE fell below $0.075, its lowest since 20 August, and its 50-day average crossed below its 200-day (a \"death cross\") (19, 20, 24). Every coin is down 4\u20136% on the week and 7\u201314% over 20 days. Most of the SOL and ETH headlines are paid presale promotions (openPR, \"Pepeto\"), which we ignored. That includes the claim that a whale sold $104M of SOL (17), which we could not verify.",
+   "opinion": "We lean bearish for next week, with modest conviction. Three things point down at once: a security scare at the biggest exchange, a falling Nasdaq, and a 20-day downtrend that is already in place. After a big exchange hack, the hit to sentiment usually lasts for days, not hours, while users move funds and regulators comment. ETF inflows are positive but too small to soak up selling of this size. Higher-beta coins (ones that swing harder than BTC) have done worse all month. SOL is down 13.6% in 20 days, so we expect it to keep underperforming. BTC should hold up best. The trend is weak but not collapsing, so confidence stays low.",
+   "dissent": "The close tells a different story from the intraday panic. BTC finished down only 1.3% after trading about 5% lower, so dip buyers absorbed the hack news on the day it broke. ETFs have taken in money for four days in a row despite the slide, which suggests institutions are buying weakness. Hack-driven sell-offs often reverse fast once the exchange says customer funds are covered. Coins are already 7\u201314% lower over 20 days, so a lot of bad news may be priced in. A weekend with no equity trading could let crypto bounce on its own.",
    "calls": [
     {
      "symbol": "BTC",
      "stance": "bearish",
      "confidence": 2,
-     "why": "The downtrend and the unresolved Binance outflow outweigh possible Strategy buying, but a $78K floor could hold."
+     "why": "Sentiment damage from the Binance hack and a weak tech market outweigh small ETF inflows, though Friday's intraday recovery limits how far we expect it to fall."
     },
     {
      "symbol": "ETH",
      "stance": "bearish",
      "confidence": 2,
-     "why": "ETH is under the $2,385 level analysts flag on the way to a $2,000 scenario, is down 9.4% in 20 days, and the Binance flows are ETH-tagged."
+     "why": "ETH is down 10.7% in 20 days, briefly tested $2,200 after the hack, and has no real positive catalyst in today's news."
     },
     {
      "symbol": "SOL",
      "stance": "bearish",
-     "confidence": 2,
-     "why": "SOL is the weakest major and falls hardest when traders cut risk; the Ondo tokenization news is too small to change that."
+     "confidence": 3,
+     "why": "SOL is the weakest of the large coins at -6.1% on the week and -13.6% over 20 days, and higher-beta coins are lagging in a risk-off market."
     },
     {
      "symbol": "DOGE",
      "stance": "bearish",
      "confidence": 2,
-     "why": "Meme coins tend to lead selloffs, and DOGE has already lost the $0.079\u20130.080 range its headlines describe."
+     "why": "DOGE has a fresh death cross and broke below $0.075 to its lowest since August, though Friday's slight gain shows some sellers may be running out."
     }
    ],
    "sources": [
     {
-     "title": "Is Binance Being Hacked? $2 Billion Outflow Puts Customer Funds in Question",
+     "title": "Weekly Wrap: Crypto Plunges After Binance Hack",
      "source": "Yahoo Finance",
-     "link": "https://beincrypto.com/is-binance-being-hacked-customer-funds/?.tsrc=rss"
+     "link": "https://www.cryptoprowl.com/releases/weekly-wrap-crypto-plunges-after-binance-hack-7582?.tsrc=rss"
     },
     {
-     "title": "Strategy Announces Third Quarter Financial Results; Operating Income of $21 Billion and Diluted EPS of $44.75 - Business Wire",
-     "source": "Business Wire",
-     "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNaVZYSkxmTUgtVDlwWWFLa19jeFFkYWJTVFpHV25USFpNd2M2NmxaVVlSUkFVUk5kaDhhOW1uWWJaYk1mM1I1ZnlrVWZadlBJSm5oNW4tYVZ2OFdNejdibEhNS1RHT2FSS3gtbDJLc29mTlUxSWRsQS1xei1hX3RJR2RGOGw5ZXNJYnJiQ3E0MVJld0RlSFliMkwxRnhaSnVhTzBYQUw2NXRlaHBSSGtlYlBtdFFoSmxEZm4xeEZlUFNiSU9HOXlPQ011RzkxRVpzNXBOZDJaUnVtZXZ6WmZhWWR1UVJlTDhmUkVpRkF3SnNCZWpqbE9LQl9Qd251dw?oc=5"
+     "title": "Bitcoin ETFs Add $441M in 4 Days as Zcash Streak Hits Day 8 - Cryptonews.net",
+     "source": "Cryptonews.net",
+     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5Tel9aOFFKY1h1N1NJOHVQMDVnSEd6eWd0RGhHTzNMWVJ5dkVXMTN6bHBDbTNFRTlmaTlXTWNZM1FZOFBuYXFWdFVIUUZSV3BzZVdRLTk2Q2c?oc=5"
     },
     {
-     "title": "MSTR Stock: Strategy's Bitcoin Bazooka Is Back; What Now? - Investor's Business Daily",
-     "source": "Investor's Business Daily",
-     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPLVE5NmlHVU5sUm5aNEY4T08yRjloYkNGOGllYU1kVkN6Wm9UQUN5NzlxcGRLbW95YTV0UnkwOWtCS01RMHhKOUVLMFEwZENvc1ZzQXVNakNJSGVuZ09jYmp2MXVMUlVIT2lSVHZKUFdDdzltLTFEbU45YjJHY2tIVVF5SGpNZ2dPbWh5eTZHM1RiUkhORGY4Y0lTZ1JKV09nNU40eA?oc=5"
-    },
-    {
-     "title": "Ether\u2019s $2,000 Scenario Depends on Price Below $2,385 and Elevated Balances - TOKENPOST",
-     "source": "TOKENPOST",
-     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE91Q3hwanZRa1pFMHM1NWpDdHh2SHpZSXVlMUNhc1ZZLUV0dGhmVGNuempueUxRQTY4WVF2OFJyWWdoNVF4RllOczNEN09BbFV5WXNvYWFidjJaUQ?oc=5"
-    },
-    {
-     "title": "Ondo brings its tokenized portfolios to Solana",
+     "title": "Markets lashed by tech rout as earnings fan AI fears",
      "source": "Yahoo Finance",
-     "link": "https://www.thestreet.com/crypto/markets/ondo-brings-its-tokenized-portfolios-to-solana?.tsrc=rss"
+     "link": "https://finance.yahoo.com/technology/ai/articles/tech-firms-fresh-hit-earnings-024928854.html?.tsrc=rss"
     },
     {
-     "title": "CFTC Chair Selig backs onchain finance rules at Link:NYC - Crypto News",
-     "source": "Crypto News",
-     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1QSDNtNGtId0VDYmZBOUJoMWpWREFfUlNaNS1XeW03RVNOc2VLREhzV0JMaFpmOWt2TC1lOEtTcWdZTVoxS2JfSlBXNGRtYU9MaUVTZFhKbUZodWpvNlBlOEhrR2NCay0xc0txZ3V5Yw?oc=5"
+     "title": "Ethereum Price Forecast: ETH drops near $2,200 after Binance hack - FXStreet",
+     "source": "FXStreet",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPdy1VQmRZWXU1cS1MTEVVUG02Wm1XclFPMHhQTDh1eDFlQldSbXlHUHBydkRScFBISVM4Zy1BUS1jSXR3cXZyQUVDVnBrWEJqUkJNQUdicVRjZ2xIUFo1eHNjX1h0UTRSdmpYQng2LU5HSmVRQV9ZQjJSdEJFWEctLVRGRGxoeUFxdjdGN3NiYUctd0tXNmNpMDZpSHdQVXFSTlg3Wm9zR2ZrVEo0c2hpSHBuRURMVHdOaFdVR0ZqYWE?oc=5"
     },
     {
-     "title": "Senator Hagerty opposes CBDC, supports Bitcoin reserve expansion, and calls for clearer crypto regulations. - Pluang",
+     "title": "US SPOT ETF FLOWS (29 OCT 2026) \ud83d\udfe2 $BTC: +$17.07M \ud83d\udfe2 $Z - KuCoin",
+     "source": "KuCoin",
+     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBKZHVHVUxDcktzV2drRXZCVGs0eHZUQTl2OEhVODNLbnFmbkdlZW5EazJyOXMydDZGeURQOGRYZi1mNEdibTBQRVdsMnp0U1lnNFVJV19tdm5RWTZfSWttaTJXVnZteGhQX3ZJOXprZnhhUQ?oc=5"
+    },
+    {
+     "title": "Digital Chamber Urges Crypto Exchange Oversight After Binance Hack - The Crypto Times",
+     "source": "The Crypto Times",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYkF6QTZ0SnJUSkdKN3hXNTRpUEJsRVEycTh5NlI3bW93UGtyaURrOUNxWWM1YS0yNDgzb0RjQVJ2WU1hLW1Na051eklMOEdQWFk4VUhDcG5VTmtTNzI4S2N4OWZrdVVJcFRmS1d5TURzQjJ6di1IYUJ6R2dWci1fNm4xVEhCc3JuOUh5dmUwc29BSlVSY091MUdvLVZzNWU5QUp3a25TR3E?oc=5"
+    },
+    {
+     "title": "Dogecoin price breaks $0.0750, lowest since 20 August - CryptoTicker.io",
+     "source": "CryptoTicker.io",
+     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQUGM3QzBhVjlJQTA0QTdEbFlUTk9rNjZ3aTdzZXJPLWpxT0VCd1ZvMjVTc1lPcmJLelB6ZGFJV1R4OWJNNnh1emFRR0RIYVVtSEhFY3pNRllzazNZN3RfT1JWRVBzRllEV1AyR2piZGFtaERHMzUzc2U5R01PclFYdzBn?oc=5"
+    },
+    {
+     "title": "Dogecoin's 50-day moving average crosses below 200-day, signaling potential price weakness. - Pluang",
      "source": "Pluang",
-     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRTBkYTlXQ3g1a0Rrd1dFR0hEdXdaRUk2czBuN3JfVHV3LXh6VFlxbmFvaE1nTllEbXI5OWExSnhFS3JYMll6Wjk4dkZlQ2pkcnBKZGVyZzJpdk9OYmpqOEotSVdsNW9ZVlZBWFNkRzJTek9hbEQ2UGRBVnpTRnNyZmpoNXU5XzRuV0JCZ044WTBCVWZySzB6Mk9TYlZWOW80V2FPbnJ3?oc=5"
-    },
-    {
-     "title": "Dogecoin price steady at $0.0790 with wide dail... - Pluang",
-     "source": "Pluang",
-     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeng4UktuQjd1U1hGMVJqVDl1N0FSZDZqbTBNLWlfUFRoTW1SVWVTVFRZREt2TkxVWWJoQWZaWlBuV2pDVHlneXJfZkRKeENod05iVTRHakhLQ2xqRHhUZy04LURhempGYkhiUV94bzFpeUxCYlE1ZTFkVm82Z0NFa01BQXFLY2d2SnFGc2dYYjlPOW9HSWRzNVdtemh1S28?oc=5"
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNeWoyV2dkWDVlTlZDVDZmR0RDMWtJUEVROERlVzJ5X1haWktzSHZLUENUd0Y1RXpjcjRTeWx2dlhlSWxqLUdxQXd0allhdURUWjVWZS1xNl9JS3J1VnVCZ1ZGZXJ1bndyOVBpM0VHZGxzTzRYSEwxcmdIRXJaVnkxT3dMZ1F6WmlJcWRrbDJLNHk?oc=5"
     }
    ],
    "record": "no calls scored yet",
