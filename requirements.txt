@@ -1,0 +1,2 @@
+# Optional: only needed for --backend api (an Anthropic API key). The default uses Claude Code.
+anthropic>=2.3

@@ -1,0 +1,8 @@
+# Local state stays on the Mac; results/ and docs/ are what gets published.
+*.db
+*.db-journal
+logs/
+dashboard.html
+journals/
+__pycache__/
+.DS_Store
