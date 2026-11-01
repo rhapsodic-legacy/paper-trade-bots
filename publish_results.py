@@ -12,9 +12,11 @@ import argparse
 import json
 import subprocess
 import sys
+from datetime import datetime
 from pathlib import Path
 
 from papertrade import Ledger
+from papertrade.mining import JournalMiner
 from papertrade.report import collect
 
 HERE = Path(__file__).resolve().parent
@@ -34,6 +36,12 @@ def summary(report: dict) -> str:
     for i, b in enumerate(bots, 1):
         lines.append(f"| {i} | {b['name']} | {usd(b['equity'])} | {b['return_pct']:+.2f}% | "
                      f"{usd(b['day_change'])} | {usd(b['cash'])} |")
+    bench = report.get("benchmark")
+    if bench:
+        beating = sum(b["equity"] > bench["equity"] for b in bots)
+        lines.append(f"| | *{bench['name']}* | {usd(bench['equity'])} | {bench['return_pct']:+.2f}% | "
+                     f"{usd(bench['day_change'])} | |")
+        lines += ["", f"{beating} of {len(bots)} bots are beating simply buying the S&P 500 on day one and holding it."]
     lines += ["", f"## Trades on {day}", ""]
     todays = [(b["name"], t) for b in report["bots"] for t in b["trades"] if t["day"] == day]
     if not todays:
@@ -42,6 +50,13 @@ def summary(report: dict) -> str:
         value = float(t["quantity"]) * t["price"]
         lines.append(f"- **{name}** {t['side']} {t['quantity']} {t['symbol']} at {t['price']:,.2f} "
                      f"({usd(value)}): {t['reason']}")
+    triggered = [(name, t) for name, t in todays if t["reason"].startswith("[")]
+    if triggered:
+        lines += ["", f"{len(triggered)} of these were standing orders (stops, targets or limits) firing."]
+    if report.get("standing"):
+        lines += ["", "## Standing orders", ""]
+        lines += [f"- **{o['bot']}**: {o['order']}" + (f" ({o['reason']})" if o["reason"] else "")
+                  for o in report["standing"]]
     lines += ["", "## Journal entries", ""]
     for b in report["bots"]:
         entry = next((f for f in b["feed"] if f["day"] == day and f["kind"] == "day"), None)
@@ -65,7 +80,29 @@ def write(ledger_path: str, root: Path = HERE) -> dict:
     (root / "results" / "days" / f"{report['as_of']}.json").write_text(data)
     (root / "results" / "README.md").write_text(summary(report))
     build(ledger_path, str(root / "docs" / "index.html"))
+    for mined in JournalMiner(Ledger(ledger_path)).reports():
+        (root / "results" / "lessons").mkdir(exist_ok=True)
+        start = datetime.strptime(mined["month"], "%B %Y")
+        (root / "results" / "lessons" / f"{start:%Y-%m}.md").write_text(lessons_md(mined))
     return report
+
+
+def lessons_md(m: dict) -> str:
+    lines = [f"# What worked in {m['month']}", "", m["summary"], "", "## Which reasoning made money", "",
+             "| Reason for opening | Trips | Won | Total profit | Average |", "|---|---|---|---|---|"]
+    lines += [f"| {s['category']} | {s['trips']} | {s['wins']} | {usd(s['total_pnl'])} | {s['avg_pct']:+.1f}% |"
+              for s in m["stats"]]
+    if m["patterns"]:
+        lines += ["", "## Patterns", ""] + [f"- {p}" for p in m["patterns"]]
+    if m["lessons"]:
+        lines += ["", "## Lessons for each bot", ""]
+        for bot, lessons in m["lessons"].items():
+            lines += [f"**{bot}**", ""] + [f"- {l}" for l in lessons] + [""]
+    lines += ["", "## Every round trip", "", "| Bot | Trade | Opened | Closed | Profit | Reason type |",
+              "|---|---|---|---|---|---|"]
+    lines += [f"| {t['bot']} | {t['direction']} {t['symbol']} | {t['opened']} | {t['closed'] or 'still open'} | "
+              f"{usd(t['pnl'])} ({t['pct']:+.1f}%) | {t['category'] or '?'} |" for t in m["trips"]]
+    return "\n".join(lines) + "\n"
 
 
 def push(root: Path, day: str) -> str:

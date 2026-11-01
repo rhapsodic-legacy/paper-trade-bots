@@ -120,8 +120,10 @@ class Report:
 
 
 class ResearchDesk:
-    def __init__(self, ledger: Ledger, news: NewsCache | None, desks: list[Desk] = DESKS, assets=()):
+    def __init__(self, ledger: Ledger, news: NewsCache | None, desks: list[Desk] = DESKS, assets=(),
+                 calendar=None, filings=None):
         self.ledger, self.news, self.desks = ledger, news, desks
+        self.calendar, self.filings = calendar, filings
         self.assets: dict[str, Asset] = {a.symbol: a for a in assets}
         self.db: sqlite3.Connection = ledger.db
         self.db.executescript(SCHEMA)
@@ -159,6 +161,12 @@ class ResearchDesk:
                    item.symbol[6:].title() if item.symbol.startswith("topic:") else item.symbol)
             summary = f" {item.summary[:240]}" if item.summary and item.summary != item.title else ""
             lines.append(f"{i}. [{tag}] {item.title} ({item.source}, {item.published:%d %b %H:%M} UTC).{summary}")
+        coming = self.calendar.notes_for(day, desk.symbols) if self.calendar else ""
+        if coming:
+            lines += ["", "## Coming up (market calendar)", coming]
+        filed = self.filings.notes_for(day, desk.symbols) if self.filings else ""
+        if filed:
+            lines += ["", "## SEC filings this past week", filed]
         record = self.track_record(desk.name, day)
         if record["scored"]:
             lines += ["", "## Your track record", record["text"]]

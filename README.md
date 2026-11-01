@@ -84,6 +84,11 @@ The ledger and caches (`*.db`) stay on the computer that runs the bots.
 | `papertrade/strategy.py` | The rule language bots write systems in, its indicators, and the backtester |
 | `papertrade/lab.py` | The strategy lab: design, refine on training years, test once on unseen years |
 | `papertrade/universe.py` | The symbols traded: 7 stocks and ETFs, 4 coins |
+| `papertrade/standing.py` | Stop-loss, take-profit and limit orders checked at every close, and each trade's invalidation |
+| `papertrade/events.py` | The market calendar: earnings dates, Fed decisions, CPI and jobs reports |
+| `papertrade/filings.py` | The filings clerk: SEC filings and insider trades for the watched stocks |
+| `papertrade/mining.py` | Monthly journal mining: which kinds of reasoning won and which lost |
+| `daily_run.py`, `publish_results.py` | The scheduled daily routine, and pushing results to GitHub |
 | `run_bots.py` | Runs the Claude bots for a day (or several), saving trades and journals |
 | `papertrade/report.py`, `papertrade/templates/dashboard.html` | Gathers the dashboard's data and the page it fills |
 | `dashboard.py` | Builds a single self-contained `dashboard.html` from a ledger |
@@ -104,11 +109,34 @@ The ledger and caches (`*.db`) stay on the computer that runs the bots.
 - Rejected orders don't stop the day. They come back in `DayResult.rejections` with the reason,
   which the bot can learn from in its journal.
 
+### Standing orders and "what would prove me wrong"
+
+A stop-loss written in a journal is a wish. `papertrade/standing.py` makes it an order:
+
+- `stop_loss` and `take_profit` close a position when the close moves past their price;
+  `limit_buy` and `limit_short` open one when the close reaches theirs (they expire after 10 days
+  unless the bot says otherwise).
+- They're checked at every daily close, before the bots decide and even on days a bot isn't
+  called. Only closes are known, so an order fills at the close that crosses its price, which can
+  be worse than the price set after a gap. Fired orders show up in the results marked `[stop-loss ...]`.
+- Orders that make no sense (a stop above today's close on a long, a limit buy above the price)
+  are refused with the reason, which the bot sees the next day.
+- Every buy and short carries an invalidation: one sentence on what would prove it wrong. It's
+  shown to the bot every day while it holds the position, with a nudge to act or explain.
+
+### The benchmark
+
+Every bot is measured against putting all $100,000 into SPY (the S&P 500) on its first day and
+doing nothing. It's in every briefing, on the leaderboard and chart, and in `results/README.md`.
+Most active traders, human or AI, don't beat it; that is one of the lessons.
+
 ## Plugging in a bot
 
-A bot is any function `view -> list[Order]`. `view` has the day, prices, which markets are
-open, the bot's own account, and `view.history(symbol, n)`. Each `Order` carries a `reason`
-string that is saved with the trade, ready to feed the journal in step 4.
+A bot is any function `view -> list[Order | StandingOrder]`. `view` has the day, prices, which
+markets are open, the bot's own account, `view.history(symbol, n)`, and `view.notes` (its
+benchmark comparison, standing orders and theses). Each `Order` carries a `reason` string that is
+saved with the trade and an optional `invalidation`; a `StandingOrder` places or cancels a stop,
+target or limit.
 
 ## Data feeds
 
@@ -118,6 +146,17 @@ string that is saved with the trade, ready to feed the journal in step 4.
   archive in `data.db` grows, so later runs can replay the bots against real past news.
 - Briefings never include news published after the day being simulated, so bots can't peek at the future.
 - A failed fetch is reported and skipped; the bots just see "no data" or "no headlines" for that item.
+- The market calendar (`papertrade/events.py`) adds earnings dates for the watched stocks from
+  Nasdaq's earnings calendar, Fed rate decisions from the Federal Reserve's page, and CPI and jobs
+  report dates from the Bureau of Labor Statistics. The published Fed and BLS dates through 2027
+  are built in, so the calendar still works when a government site turns a script away.
+- The filings clerk (`papertrade/filings.py`) reads SEC EDGAR for the watched stocks: 8-Ks in
+  plain words ("quarterly results", "executive or director change"), quarterly and annual reports,
+  big-stake filings, and insider trades from Form 4, read down to who bought or sold how many
+  shares and whether it was a pre-set 10b5-1 plan. The SEC asks scripts to identify themselves:
+  set `PAPERTRADE_SEC_CONTACT` to your name and email. Each filing is downloaded once, ever.
+- Both are fetched once a day by `fetch_data.py` into `data.db` and read from there by every bot
+  and research desk, so adding bots doesn't add requests.
 
 ## The bots
 
@@ -161,6 +200,16 @@ Guardrails between Claude and the broker:
 
 Keeping the facts in code and only the narrative in Claude is deliberate: a bot can misremember
 how it felt, but never how much money it made.
+
+## Journal mining
+
+Once a month (on the first run after a month ends), `papertrade/mining.py` turns every closed
+trade into a round trip: why it was opened, what the bot said would prove it wrong, why it was
+closed, and what it made. Positions still open are included at their month-end value. Claude
+labels each opening reason with one category (trend, dip-buying, valuation, news, desk call,
+macro, trading-system signal, gut feel) and the win rate and profit per category are counted in
+code. The scoreboard and a few lessons per bot go into each bot's memory, and the full report is
+published as `results/lessons/YYYY-MM.md`.
 
 ## Research desk
 
@@ -236,6 +285,6 @@ less of your allowance than the default `opus`.
 
 ## Next steps
 
-All seven planned steps are built. Natural next moves: run it for real with Claude Code and live
-data, put it in a GitHub repo, and start on the public website (phase 2).
+The prototype runs daily on a Mac and publishes here. Next: let the first weeks of results decide
+what to improve (the first review is due 6 November 2026), then start on the public website (phase 2).
 

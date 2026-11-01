@@ -13,7 +13,7 @@ Accounts, trades and journals are kept in the ledger file, so each run picks up 
 import argparse
 from datetime import date, timedelta
 
-from papertrade import Ledger, Simulation, SyntheticPriceFeed
+from papertrade import Account, Ledger, Simulation, SyntheticPriceFeed
 import sys
 
 from papertrade.brain import BrainUnavailable, make_brain, PersonaBot, system_prompt
@@ -21,8 +21,11 @@ from papertrade.briefing import build_briefing
 from papertrade.desk import ResearchDesk
 from papertrade.journal import JournalMemory
 from papertrade.lab import system_notes
+from papertrade.mining import JournalMiner
 from papertrade.personas import BY_NAME
 from papertrade.market_data import PriceCache
+from papertrade.events import MarketCalendar
+from papertrade.filings import FilingsClerk
 from papertrade.news import NewsCache
 from papertrade.personas import PERSONAS
 from papertrade.universe import ASSETS, START_PRICES
@@ -60,25 +63,31 @@ def main():
         start = max(done) + timedelta(days=1) if done else SYNTHETIC_START
         origin = SYNTHETIC_START - timedelta(days=400)  # enough history for 200-day lab indicators
         feed = SyntheticPriceFeed(ASSETS, START_PRICES, origin, (start - origin).days + args.days, seed=11)
-        days, news = [start + timedelta(days=i) for i in range(args.days)], None
+        days, news, calendar, filings = [start + timedelta(days=i) for i in range(args.days)], None, None, None
     else:
         feed, news = PriceCache(args.data).feed(), NewsCache(args.data)
+        calendar, filings = MarketCalendar(args.data), FilingsClerk(args.data)
         days, ledger = [date.today()], Ledger(args.ledger or "bots.db")
 
     if args.show_prompt:
         persona = BY_NAME[args.show_prompt]
-        sim = Simulation(ASSETS, feed, Ledger())
-        view = sim.view(days[0], sim.add_account(persona.name))
+        sim = Simulation(ASSETS, feed, ledger)  # read-only here: nothing is stepped or saved
+        view = sim.view(days[0], sim.accounts.get(persona.name) or Account(persona.name))
         print("=== SYSTEM PROMPT ===\n" + system_prompt(persona))
         system = system_notes(ledger.db, persona, view)
-        print("\n=== USER MESSAGE ===\n" + build_briefing(view, list(persona.watchlist), news, system=system).text)
+        watch = list(persona.watchlist)
+        print("\n=== USER MESSAGE ===\n" + build_briefing(
+            view, watch, news, system=system,
+            calendar=calendar.notes_for(days[0], watch) if calendar else "",
+            filings=filings.notes_for(days[0], watch) if filings else "").text)
         return
 
     personas = [p for p in PERSONAS if not args.bots or p.name in args.bots]
     brain = make_brain(args.backend, args.effort, args.model)
     memory = JournalMemory(ledger)
-    desk = None if args.no_desk else ResearchDesk(ledger, news, assets=ASSETS)
-    bots = {p.name: PersonaBot(p, brain, news, memory, desk) for p in personas}
+    miner = JournalMiner(ledger)
+    desk = None if args.no_desk else ResearchDesk(ledger, news, assets=ASSETS, calendar=calendar, filings=filings)
+    bots = {p.name: PersonaBot(p, brain, news, memory, desk, calendar, filings) for p in personas}
     sim = Simulation(ASSETS, feed, ledger)
     tokens_in = tokens_out = 0
 
@@ -95,6 +104,10 @@ def main():
                     print(f"  {summary.summary}")
                     for lesson in summary.lessons:
                         print(f"  Lesson: {lesson}")
+            for report in miner.mine(brain, day):
+                print(f"\n*** Journal mining for {report['month']}: {report['summary']}")
+                for row in report["stats"]:
+                    print(f"  {row['category']}: {row['wins']}/{row['trips']} won, ${row['total_pnl']:,.2f}")
             if desk:
                 prices = feed.prices(day)
                 open_symbols = [s for s, a in sim.assets.items() if a.is_open(day) and s in prices]
@@ -109,6 +122,11 @@ def main():
             sys.exit(str(e))
         for name, order, why in result.rejections:
             bots[name].rejected(order, why)
+        for name, ok, message in result.standing:
+            if not ok:
+                bots[name].standing_problem(message)
+        for t in result.triggered:
+            print(f"\n!!! {t.account}: standing order fired, {t.side} {t.quantity.normalize()} {t.symbol} @ {t.price}: {t.reason}")
         for name, bot in bots.items():
             d = bot.last_decision
             if d is None:
@@ -120,6 +138,8 @@ def main():
             print(f"\n--- {name}: {d.market_view or '(no view)'}")
             for t in (t for t in result.fills if t.account == name):
                 print(f"  FILLED {t.side} {t.quantity} {t.symbol} @ {t.price}: {t.reason}")
+            for _, ok, message in (r for r in result.standing if r[0] == name and r[1]):
+                print(f"  STANDING {message}")
             for problem in bot.feedback:
                 print(f"  PROBLEM {problem}")
             if d.journal_entry:
@@ -128,8 +148,11 @@ def main():
         print("\nLeaderboard:")
         for rank, (name, equity, pct) in enumerate(sim.leaderboard(day), 1):
             print(f"  {rank}. {name:<19} ${equity:>12,}  {pct:+}%")
+        bench = next((b for b in (sim.benchmark_return(a, feed.prices(day)) for a in sim.accounts.values()) if b), None)
+        if bench:
+            print(f"     S&P 500 buy-and-hold since {bench[0]:%d %b}: {bench[1]:+.2f}%")
 
-    for extra in (memory.usage, desk.usage if desk else {}):
+    for extra in (memory.usage, miner.usage, desk.usage if desk else {}):
         tokens_in += extra.get("input_tokens", 0)
         tokens_out += extra.get("output_tokens", 0)
     print(f"\nClaude usage: {tokens_in:,} input + {tokens_out:,} output tokens. " + usage_note(args.backend, tokens_in, tokens_out))
