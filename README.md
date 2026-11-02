@@ -1,5 +1,5 @@
 # Paper_Trade
-
+ 
 **Latest results:** [results/README.md](results/README.md) (leaderboard, today's trades and journals, updated after each daily run).
 
 A paper-money trading simulator for AI bots with personalities. The whole prototype plan is here: the market engine, real data feeds, seven Claude-driven bots, journals that act as
