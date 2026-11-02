@@ -25,6 +25,7 @@ class Order:
     side: Side
     quantity: Decimal
     reason: str = ""  # the bot's explanation, kept for its journal
+    invalidation: str = ""  # for buys and shorts: what would prove the trade wrong
 
 
 class Broker:
