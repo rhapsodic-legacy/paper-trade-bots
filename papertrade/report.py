@@ -7,6 +7,8 @@ from .journal import JournalMemory
 from .lab import active_system
 from .ledger import Ledger
 from .personas import BY_NAME
+from .sim import BENCHMARK
+from .standing import StandingOrders
 
 def _assets():
     from .universe import ASSETS
@@ -74,4 +76,22 @@ def collect(ledger: Ledger, trades_shown: int = 25, feed_shown: int = 60) -> dic
                       "record": record["text"], "hit_rate": record["right"] / record["scored"] if record["scored"] else None})
     starting = float(ledger.load_account(names[0]).starting_cash) if names else 100000.0
     return {"days": [d.isoformat() for d in days], "as_of": last.isoformat() if last else None,
-            "starting_cash": starting, "bots": bots, "desks": desks}
+            "starting_cash": starting, "bots": bots, "desks": desks,
+            "benchmark": benchmark(ledger, days, starting), "standing": standing_orders(ledger, names)}
+
+
+def benchmark(ledger: Ledger, days: list, starting: float) -> dict | None:
+    """Putting all the starting cash into SPY on the first day and holding: the bar every bot has to clear."""
+    closes = [ledger.marks(d).get(BENCHMARK) for d in days]
+    if not closes or closes[0] is None:
+        return None
+    series = [round(starting * float(c / closes[0]), 2) if c is not None else None for c in closes]
+    last = next(v for v in reversed(series) if v is not None)
+    prev = next((v for v in reversed(series[:-1]) if v is not None), starting)
+    return {"name": "S&P 500 buy-and-hold", "series": series, "equity": last,
+            "return_pct": (last / starting - 1) * 100, "day_change": round(last - prev, 2)}
+
+
+def standing_orders(ledger: Ledger, names: list[str]) -> list[dict]:
+    book = StandingOrders(ledger.db)
+    return [{"bot": n, "order": o.describe(), "reason": o.reason} for n in names for o in book.open_orders(n)]

@@ -30,9 +30,12 @@ class FakeClient:
                                usage=SimpleNamespace(input_tokens=1000, output_tokens=200))
 
 
-def answer(*orders, journal="Did a thing."):
+def answer(*orders, journal="Did a thing.", standing=()):
     return {"market_view": "Up, probably.", "journal_entry": journal,
-            "orders": [dict(zip(("symbol", "side", "amount", "unit", "reason"), o)) for o in orders]}
+            "orders": [dict(zip(("symbol", "side", "amount", "unit", "reason"), o), invalidation="if it falls 10%")
+                       for o in orders],
+            "standing_orders": [dict(zip(("symbol", "kind", "price", "amount", "unit", "expires_days", "reason"), o))
+                                for o in standing]}
 
 
 def make_sim():

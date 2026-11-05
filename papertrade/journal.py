@@ -171,6 +171,10 @@ class JournalMemory:
             parts.append(f"Your summary of {s.label}:\n{s.summary}")
         for s in weekly:
             parts.append(f"Your summary of the {s.label}:\n{s.summary}")
+        from .mining import lessons_for  # imported here: mining builds on this module
+        coached = lessons_for(self.db, account)
+        if coached:
+            parts.append(coached)
         recent = [(d, v, e) for d, v, e in self.ledger.journal(account) if d < today and e][-days:]
         if recent:
             parts.append("Your last few daily entries:\n" + "\n".join(

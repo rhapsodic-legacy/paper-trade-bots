@@ -36,7 +36,7 @@ class Briefing:
 
 def build_briefing(view: MarketView, watchlist: list[str], news: NewsCache | None = None,
                    recent_rejections: list[str] = (), memory: str = "", research: str = "",
-                   system: str = "") -> Briefing:
+                   system: str = "", calendar: str = "", filings: str = "") -> Briefing:
     acct, prices = view.account, view.prices
     lines = [f"# Briefing for {acct.name}, {view.day:%A %d %B %Y}", ""]
 
@@ -57,6 +57,8 @@ def build_briefing(view: MarketView, watchlist: list[str], news: NewsCache | Non
                          f"unrealized {usd(p.unrealized_pnl(prices[s]))}")
     else:
         lines.append("Positions: none (all cash)")
+    if view.notes:
+        lines += ["", "## Your plans and benchmark", view.notes]
 
     if memory:
         lines += ["", "## Your memory (from your own journal)", memory]
@@ -72,6 +74,11 @@ def build_briefing(view: MarketView, watchlist: list[str], news: NewsCache | Non
 
     if system:
         lines += ["", "## Your trading system (built in the strategy lab)", system]
+
+    if calendar:
+        lines += ["", "## Coming up (market calendar)", calendar]
+    if filings:
+        lines += ["", "## SEC filings this past week", filings]
 
     # Research desk notes replace raw headlines when the desks have published today.
     headlines = [] if research else (news.headlines(view.day, watchlist) if news else [])

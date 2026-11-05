@@ -9,11 +9,13 @@ import argparse
 import sys
 from datetime import date, timedelta
 
-from papertrade import Account, Simulation
+from papertrade import Account, AssetClass, Simulation
 from papertrade.briefing import build_briefing
 from papertrade.market_data import PriceCache
 from papertrade.news import NewsCache
 from papertrade.desk import ResearchDesk
+from papertrade.events import MarketCalendar
+from papertrade.filings import FilingsClerk
 from papertrade.universe import ASSETS
 
 
@@ -38,10 +40,26 @@ def main():
         url, err = next(iter(errors.items()))
         print(f"  {len(errors)} news feeds failed, e.g. {url}: {err}")
 
+    stocks = [a.symbol for a in ASSETS if a.asset_class is AssetClass.STOCK]
+    print("Fetching the market calendar (earnings, Fed, inflation, jobs)...")
+    calendar = MarketCalendar(args.db)
+    errors = calendar.update(stocks, today)
+    if errors:
+        url, err = next(iter(errors.items()))
+        print(f"  {len(errors)} calendar sources failed (built-in Fed/BLS dates still apply), e.g. {url}: {err}")
+    print("Fetching SEC filings...")
+    filings = FilingsClerk(args.db)
+    errors = filings.update(stocks, today)
+    if errors:
+        what, err = next(iter(errors.items()))
+        print(f"  {len(errors)} filing lookups failed, e.g. {what}: {err}")
+
     sim = Simulation(ASSETS, prices.feed())
     view = sim.view(today, Account("Sample Bot"))
+    watch = [a.symbol for a in ASSETS]
     print()
-    print(build_briefing(view, [a.symbol for a in ASSETS], news).text)
+    print(build_briefing(view, watch, news, calendar=calendar.notes_for(today, watch),
+                         filings=filings.notes_for(today, watch)).text)
 
 
 if __name__ == "__main__":

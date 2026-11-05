@@ -15,6 +15,7 @@ from .briefing import build_briefing
 from .lab import system_notes
 from .personas import Persona
 from .sim import MarketView
+from .standing import KINDS, StandingOrder
 
 MODEL = "claude-opus-5-5"
 EFFORT = "medium"  # low | medium | high | xhigh | max: higher thinks harder and costs more
@@ -35,6 +36,22 @@ open today and on your watchlist.
 the whole position (amount is ignored).
 - You can't spend more cash than you have. Holding (no orders) is a perfectly good decision.
 - Close a long before shorting the same symbol, and cover a short before buying it.
+- Every buy and short needs an invalidation: one concrete, checkable sentence on what would prove the \
+trade wrong (a price level, an event, a number). You'll see it every day while you hold the position. \
+If it has happened, act on it or explain honestly why not. Leave it empty for sells and covers.
+
+Standing orders (standing_orders) are real orders the simulator holds you to, checked at every daily \
+close even on days you aren't asked to decide:
+- stop_loss closes a position if the close moves against you past price; take_profit closes it if the \
+close moves your way past price. Use unit "all" for the whole position, or usd/units for part of it.
+- limit_buy buys amount (usd or units) if the close falls to price or below; limit_short shorts if the \
+close rises to price or above. They expire after expires_days (default 10).
+- Only closing prices are known, so an order fills at the close that crosses its price, which can be \
+worse than the price you set after a big move.
+- Placing an order replaces your open order of the same kind on that symbol; price 0 cancels it. \
+If you write "my stop is $X" in your journal, place it here, or it doesn't exist.
+- Your briefing also compares you with simply buying the S&P 500 and holding it. Beating that, \
+honestly, is the real test.
 
 Some days your briefing carries research desk notes instead of raw headlines: each desk's summary, \
 house view, the strongest dissent, its calls and its track record. Weigh them with your own judgement; \
@@ -58,14 +75,32 @@ DECISION_SCHEMA = {
                     "amount": {"type": "number"},
                     "unit": {"type": "string", "enum": ["usd", "units", "all"]},
                     "reason": {"type": "string"},
+                    "invalidation": {"type": "string"},
                 },
-                "required": ["symbol", "side", "amount", "unit", "reason"],
+                "required": ["symbol", "side", "amount", "unit", "reason", "invalidation"],
+                "additionalProperties": False,
+            },
+        },
+        "standing_orders": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "symbol": {"type": "string"},
+                    "kind": {"type": "string", "enum": list(KINDS)},
+                    "price": {"type": "number"},
+                    "amount": {"type": "number"},
+                    "unit": {"type": "string", "enum": ["usd", "units", "all"]},
+                    "expires_days": {"type": "integer"},
+                    "reason": {"type": "string"},
+                },
+                "required": ["symbol", "kind", "price", "amount", "unit", "expires_days", "reason"],
                 "additionalProperties": False,
             },
         },
         "journal_entry": {"type": "string"},
     },
-    "required": ["market_view", "orders", "journal_entry"],
+    "required": ["market_view", "orders", "standing_orders", "journal_entry"],
     "additionalProperties": False,
 }
 
@@ -99,7 +134,7 @@ habits or rules, not slogans. It's fine to conclude you were lucky, or that you 
 
 @dataclass
 class Decision:
-    orders: list[Order]
+    orders: list[Order | StandingOrder]
     journal_entry: str
     market_view: str = ""
     problems: list[str] = field(default_factory=list)  # orders dropped, API errors, refusals
@@ -149,7 +184,31 @@ def to_orders(raw: dict, persona: Persona, view: MarketView) -> tuple[list[Order
         if qty <= 0:
             problems.append(f"Dropped {label}: nothing to trade")
             continue
-        orders.append(Order(symbol, Side(side), qty, str(o.get("reason", ""))[:500]))
+        invalidation = str(o.get("invalidation", ""))[:300] if side in ("buy", "short") else ""
+        if side in ("buy", "short") and not invalidation.strip():
+            problems.append(f"Note on {label}: no invalidation given, so nothing will tell you when you're wrong")
+        orders.append(Order(symbol, Side(side), qty, str(o.get("reason", ""))[:500], invalidation))
+    for o in raw.get("standing_orders", []):
+        symbol, kind = str(o.get("symbol", "")).upper(), o.get("kind")
+        label = f"{str(kind).replace('_', ' ')} on {symbol}"
+        asset = view.assets.get(symbol)
+        if symbol not in persona.watchlist or asset is None or asset.asset_class not in persona.asset_classes:
+            problems.append(f"Dropped {label}: not on your watchlist")
+            continue
+        if kind not in KINDS:
+            problems.append(f"Dropped {label}: unknown kind")
+            continue
+        if kind == "limit_short" and not persona.can_short:
+            problems.append(f"Dropped {label}: {persona.name} doesn't short")
+            continue
+        try:
+            price, amount = Decimal(str(o.get("price", 0))), Decimal(str(o.get("amount", 0)))
+        except InvalidOperation:
+            problems.append(f"Dropped {label}: unreadable price or amount")
+            continue
+        unit = o.get("unit") if o.get("unit") in ("usd", "units", "all") else "all"
+        orders.append(StandingOrder(symbol, kind, price, amount, unit, str(o.get("reason", ""))[:300],
+                                    int(o.get("expires_days") or 10)))
     return orders, problems
 
 
@@ -293,8 +352,9 @@ def make_brain(backend: str = "claude-code", effort: str = EFFORT, model: str | 
 class PersonaBot:
     """Glues a persona, its brain, its memory and the briefing together into a Simulation strategy."""
 
-    def __init__(self, persona: Persona, brain, news=None, memory=None, desk=None):
+    def __init__(self, persona: Persona, brain, news=None, memory=None, desk=None, calendar=None, filings=None):
         self.persona, self.brain, self.news, self.memory, self.desk = persona, brain, news, memory, desk
+        self.calendar, self.filings = calendar, filings
         self.feedback: list[str] = memory.last_problems(persona.name) if memory else []
         self.last_decision: Decision | None = None  # None when its markets were all closed
 
@@ -305,8 +365,10 @@ class PersonaBot:
         recall = self.memory.recall(self.persona.name, view.day) if self.memory else ""
         research = self.desk.notes_for(self.persona.watchlist, view.day) if self.desk else ""
         system = system_notes(self.memory.db, self.persona, view) if self.memory else ""
-        briefing = build_briefing(view, list(self.persona.watchlist), self.news, self.feedback, recall, research,
-                                  system)
+        watch = list(self.persona.watchlist)
+        calendar = self.calendar.notes_for(view.day, watch) if self.calendar else ""
+        filings = self.filings.notes_for(view.day, watch) if self.filings else ""
+        briefing = build_briefing(view, watch, self.news, self.feedback, recall, research, system, calendar, filings)
         self.feedback = []
         self.last_decision = self.brain.decide(self.persona, briefing.text, view)
         self.feedback.extend(self.last_decision.problems)
@@ -314,3 +376,6 @@ class PersonaBot:
 
     def rejected(self, order: Order, why: str) -> None:
         self.feedback.append(f"{order.side.value} {order.quantity} {order.symbol}: {why}")
+
+    def standing_problem(self, message: str) -> None:
+        self.feedback.append(f"Standing order not placed, {message}")
