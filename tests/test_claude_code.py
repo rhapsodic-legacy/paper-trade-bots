@@ -62,6 +62,8 @@ class ClaudeCodeTest(unittest.TestCase):
     def test_stop_conditions(self):
         for cli in (FakeCLI(error=FileNotFoundError()),
                     FakeCLI(result(is_error=True, result="Not logged in · Please run /login"), code=1),
+                    FakeCLI(result(is_error=True, result="Failed to authenticate: OAuth session expired and "
+                                                        "could not be refreshed"), code=1),
                     FakeCLI(result(is_error=True, result="Claude usage limit reached"), code=1)):
             with self.assertRaises(BrainUnavailable):
                 ClaudeCodeBrain(runner=cli).ask("s", "m", {})
