@@ -145,6 +145,11 @@ def main():
             if d.journal_entry:
                 print(f"  Journal: {d.journal_entry}")
 
+        decided = [b.last_decision for b in bots.values() if b.last_decision is not None]
+        if decided and all(d.problems and not d.journal_entry and not d.market_view for d in decided):
+            # Every call failed (e.g. Claude Code signed out): fail loudly so daily_run shows a notification.
+            sys.exit("Every bot's Claude call failed today, so nobody traded: " + decided[0].problems[0]
+                     + "\nFix that, then run again with: python3 run_bots.py --force")
         print("\nLeaderboard:")
         for rank, (name, equity, pct) in enumerate(sim.leaderboard(day), 1):
             print(f"  {rank}. {name:<19} ${equity:>12,}  {pct:+}%")

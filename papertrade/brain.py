@@ -325,7 +325,9 @@ class ClaudeCodeBrain(ClaudeBrain):
         usage = _usage(out.get("usage"))
         if done.returncode != 0 or out.get("is_error"):
             low = text.lower()
-            if any(k in low for k in ("/login", "not logged in", "invalid api key", "authentication")):
+            # Covers "Not logged in", "Failed to authenticate", "OAuth session expired" and the like.
+            if any(k in low for k in ("/login", "not logged in", "invalid api key", "authenticat", "oauth",
+                                      "session expired", "unauthorized")):
                 raise BrainUnavailable(f"Claude Code isn't signed in: {text[:200]}. Run `claude` and use /login.")
             if any(k in low for k in ("usage limit", "rate limit", "limit reached")):
                 raise BrainUnavailable(f"Your Claude plan's usage limit was reached: {text[:200]}. Try again later.")

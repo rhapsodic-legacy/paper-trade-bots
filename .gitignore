@@ -6,3 +6,4 @@ dashboard.html
 journals/
 __pycache__/
 .DS_Store
+keys.env
