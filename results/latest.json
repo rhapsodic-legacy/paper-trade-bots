@@ -9,22 +9,23 @@
   "2026-11-01",
   "2026-11-02",
   "2026-11-03",
-  "2026-11-04"
+  "2026-11-04",
+  "2026-11-05"
  ],
- "as_of": "2026-11-04",
+ "as_of": "2026-11-05",
  "starting_cash": 100000.0,
  "bots": [
   {
    "name": "Cautious Retiree",
    "slot": 1,
    "tagline": "Protect the nest egg first.",
-   "equity": 100703.02,
+   "equity": 99403.96,
    "cash": 61050.31,
-   "return_pct": 0.70302,
-   "day_change": 773.3,
+   "return_pct": -0.59604,
+   "day_change": -1299.06,
    "realized": 0.0,
    "trade_count": 5,
-   "market_view": "The election relief rally may run a little further. A 1.7% jump in one day usually gives some of it back, though, and the desks are no better than a coin toss, so I'm sticking to my calendar rather than guessing.",
+   "market_view": "",
    "series": [
     100000.0,
     100308.61,
@@ -35,7 +36,8 @@
     100125.49,
     100028.48,
     99929.72,
-    100703.02
+    100703.02,
+    99403.96
    ],
    "holdings": [
     {
@@ -43,27 +45,27 @@
      "quantity": "28",
      "side": "long",
      "avg_price": 263.81,
-     "price": 276.32,
-     "value": 7736.96,
-     "pnl": 350.28
+     "price": 272.32,
+     "value": 7624.96,
+     "pnl": 238.28
     },
     {
      "symbol": "KO",
      "quantity": "53",
      "side": "long",
      "avg_price": 92.71,
-     "price": 95.8,
-     "value": 5077.4,
-     "pnl": 163.77
+     "price": 95.73,
+     "value": 5073.69,
+     "pnl": 160.06
     },
     {
      "symbol": "SPY",
      "quantity": "35",
      "side": "long",
      "avg_price": 761.41,
-     "price": 766.81,
-     "value": 26838.35,
-     "pnl": 188.97
+     "price": 733.0,
+     "value": 25655.0,
+     "pnl": -994.38
     }
    ],
    "trades": [
@@ -181,13 +183,13 @@
    "name": "Meme-Stock Gambler",
    "slot": 2,
    "tagline": "YOLO, but make it a strategy.",
-   "equity": 97437.6,
+   "equity": 92907.07,
    "cash": 28238.89,
-   "return_pct": -2.5624,
-   "day_change": -61.6,
+   "return_pct": -7.09293,
+   "day_change": -4530.53,
    "realized": -647.52,
    "trade_count": 5,
-   "market_view": "The election relief rally probably has a few more days in it for megacaps and SPY, but NVDA is in its own downtrend, and I don't want to chase anything after a 5% gap.",
+   "market_view": "",
    "series": [
     100000.0,
     100311.44,
@@ -198,7 +200,8 @@
     97603.59,
     96722.76,
     97499.2,
-    97437.6
+    97437.6,
+    92907.07
    ],
    "holdings": [
     {
@@ -206,27 +209,27 @@
      "quantity": "29",
      "side": "long",
      "avg_price": 343.83,
-     "price": 349.51,
-     "value": 10135.79,
-     "pnl": 164.72
+     "price": 344.17,
+     "value": 9980.93,
+     "pnl": 9.86
     },
     {
      "symbol": "GME",
      "quantity": "805",
      "side": "long",
      "avg_price": 24.82,
-     "price": 25.14,
-     "value": 20237.7,
-     "pnl": 257.6
+     "price": 24.17,
+     "value": 19456.85,
+     "pnl": -523.25
     },
     {
      "symbol": "NVDA",
      "quantity": "194",
      "side": "long",
      "avg_price": 212.18,
-     "price": 200.13,
-     "value": 38825.22,
-     "pnl": -2337.2
+     "price": 181.6,
+     "value": 35230.4,
+     "pnl": -5932.02
     }
    ],
    "trades": [
@@ -344,13 +347,13 @@
    "name": "Value Investor",
    "slot": 3,
    "tagline": "Buy a dollar for fifty cents.",
-   "equity": 101386.8,
+   "equity": 99697.43,
    "cash": 45461.02,
-   "return_pct": 1.3868,
-   "day_change": 1399.14,
+   "return_pct": -0.30257,
+   "day_change": -1689.37,
    "realized": 0.0,
    "trade_count": 5,
-   "market_view": "The election relief rally mostly won back recent losses and didn't create bargains, so I expect choppy, sideways prices over the next few weeks rather than a clean trend.",
+   "market_view": "",
    "series": [
     100000.0,
     100399.9,
@@ -361,7 +364,8 @@
     100304.27,
     100035.72,
     99987.66,
-    101386.8
+    101386.8,
+    99697.43
    ],
    "holdings": [
     {
@@ -369,36 +373,36 @@
      "quantity": "45",
      "side": "long",
      "avg_price": 263.81,
-     "price": 276.32,
-     "value": 12434.4,
-     "pnl": 562.95
+     "price": 272.32,
+     "value": 12254.4,
+     "pnl": 382.95
     },
     {
      "symbol": "KO",
      "quantity": "86",
      "side": "long",
      "avg_price": 92.71,
-     "price": 95.8,
-     "value": 8238.8,
-     "pnl": 265.74
+     "price": 95.73,
+     "value": 8232.78,
+     "pnl": 259.72
     },
     {
      "symbol": "MSFT",
      "quantity": "11",
      "side": "long",
      "avg_price": 531.01,
-     "price": 555.8,
-     "value": 6113.8,
-     "pnl": 272.69
+     "price": 535.93,
+     "value": 5895.23,
+     "pnl": 54.12
     },
     {
      "symbol": "SPY",
      "quantity": "38",
      "side": "long",
      "avg_price": 759.3,
-     "price": 766.81,
-     "value": 29138.78,
-     "pnl": 285.42
+     "price": 733.0,
+     "value": 27854.0,
+     "pnl": -999.36
     }
    ],
    "trades": [
@@ -516,13 +520,13 @@
    "name": "Momentum Trader",
    "slot": 4,
    "tagline": "The trend is your friend.",
-   "equity": 99964.82,
+   "equity": 99200.63,
    "cash": 73179.51,
-   "return_pct": -0.03518,
-   "day_change": 510.69,
+   "return_pct": -0.79937,
+   "day_change": -764.19,
    "realized": -86.8,
    "trade_count": 4,
-   "market_view": "The election relief rally lifted the megacaps, but SPY is still red over 5 and 20 days, so I'll trade only the names that are trending and keep positions small in case a 5\u20137% one-day jump partly reverses.",
+   "market_view": "",
    "series": [
     100000.0,
     99964.09,
@@ -533,7 +537,8 @@
     99823.3,
     99640.31,
     99454.13,
-    99964.82
+    99964.82,
+    99200.63
    ],
    "holdings": [
     {
@@ -541,27 +546,27 @@
      "quantity": "29",
      "side": "long",
      "avg_price": 347.73,
-     "price": 349.51,
-     "value": 10135.79,
-     "pnl": 51.62
+     "price": 344.17,
+     "value": 9980.93,
+     "pnl": -103.24
     },
     {
      "symbol": "GME",
      "quantity": "198",
      "side": "long",
      "avg_price": 25.14,
-     "price": 25.14,
-     "value": 4977.72,
-     "pnl": 0.0
+     "price": 24.17,
+     "value": 4785.66,
+     "pnl": -192.06
     },
     {
      "symbol": "MSFT",
      "quantity": "21",
      "side": "long",
      "avg_price": 555.8,
-     "price": 555.8,
-     "value": 11671.8,
-     "pnl": 0.0
+     "price": 535.93,
+     "value": 11254.53,
+     "pnl": -417.27
     }
    ],
    "trades": [
@@ -670,13 +675,13 @@
    "name": "Tech Growth Bull",
    "slot": 5,
    "tagline": "The future is being built right now.",
-   "equity": 99499.83,
+   "equity": 95096.7,
    "cash": 20468.25,
-   "return_pct": -0.50017,
-   "day_change": 1266.71,
+   "return_pct": -4.9033,
+   "day_change": -4403.13,
    "realized": -456.34,
    "trade_count": 8,
-   "market_view": "The election relief rally lifts megacaps and SPY in the short term, but money is moving out of AI hardware for now, and I need to respect that instead of arguing with it.",
+   "market_view": "",
    "series": [
     100000.0,
     101358.65,
@@ -687,7 +692,8 @@
     98270.73,
     96778.08,
     98233.12,
-    99499.83
+    99499.83,
+    95096.7
    ],
    "holdings": [
     {
@@ -695,36 +701,36 @@
      "quantity": "28",
      "side": "long",
      "avg_price": 347.73,
-     "price": 349.51,
-     "value": 9786.28,
-     "pnl": 49.84
+     "price": 344.17,
+     "value": 9636.76,
+     "pnl": -99.68
     },
     {
      "symbol": "MSFT",
      "quantity": "53",
      "side": "long",
      "avg_price": 526.35,
-     "price": 555.8,
-     "value": 29457.4,
-     "pnl": 1560.87
+     "price": 535.93,
+     "value": 28404.29,
+     "pnl": 507.76
     },
     {
      "symbol": "NVDA",
      "quantity": "149",
      "side": "long",
      "avg_price": 211.83,
-     "price": 200.13,
-     "value": 29819.37,
-     "pnl": -1743.46
+     "price": 181.6,
+     "value": 27058.4,
+     "pnl": -4504.43
     },
     {
      "symbol": "SPY",
      "quantity": "13",
      "side": "long",
      "avg_price": 759.97,
-     "price": 766.81,
-     "value": 9968.53,
-     "pnl": 88.92
+     "price": 733.0,
+     "value": 9529.0,
+     "pnl": -350.61
     }
    ],
    "trades": [
@@ -869,13 +875,13 @@
    "name": "Contrarian Carl",
    "slot": 6,
    "tagline": "When everyone zigs, I zag.",
-   "equity": 101015.5,
+   "equity": 99594.31,
    "cash": 86745.84,
-   "return_pct": 1.0155,
-   "day_change": -143.79,
+   "return_pct": -0.40569,
+   "day_change": -1421.19,
    "realized": 1612.78,
    "trade_count": 23,
-   "market_view": "The election relief rally pulled a week of gains into one day, and with every desk turning bullish, I expect megacaps and the index to give some of it back within days.",
+   "market_view": "",
    "series": [
     100000.0,
     100358.45,
@@ -886,7 +892,8 @@
     100581.58,
     100638.37,
     101159.29,
-    101015.5
+    101015.5,
+    99594.31
    ],
    "holdings": [
     {
@@ -894,27 +901,27 @@
      "quantity": "-14",
      "side": "short",
      "avg_price": 349.51,
-     "price": 349.51,
-     "value": -4893.14,
-     "pnl": -0.0
+     "price": 344.17,
+     "value": -4818.38,
+     "pnl": 74.76
     },
     {
      "symbol": "GME",
      "quantity": "205",
      "side": "long",
      "avg_price": 24.21,
-     "price": 25.14,
-     "value": 5153.7,
-     "pnl": 189.7
+     "price": 24.17,
+     "value": 4954.85,
+     "pnl": -9.15
     },
     {
      "symbol": "NVDA",
      "quantity": "7E+1",
      "side": "long",
      "avg_price": 211.37,
-     "price": 200.13,
-     "value": 14009.1,
-     "pnl": -786.98
+     "price": 181.6,
+     "value": 12712.0,
+     "pnl": -2084.08
     }
    ],
    "trades": [
@@ -1194,13 +1201,13 @@
    "name": "Bitcoin Bob",
    "slot": 7,
    "tagline": "Stack sats, ignore the noise.",
-   "equity": 100120.88,
+   "equity": 97076.49,
    "cash": 47000.0,
-   "return_pct": 0.12088,
-   "day_change": 1611.17,
+   "return_pct": -2.92351,
+   "day_change": -3044.39,
    "realized": 0.0,
    "trade_count": 3,
-   "market_view": "This looks like a short squeeze bouncing back to $80K, not a confirmed change in trend, so I'm leaning toward choppy, sideways-to-softer prices until ETF flows actually turn positive.",
+   "market_view": "",
    "series": [
     100000.0,
     100438.72,
@@ -1211,7 +1218,8 @@
     98458.38,
     97763.51,
     98509.71,
-    100120.88
+    100120.88,
+    97076.49
    ],
    "holdings": [
     {
@@ -1219,27 +1227,27 @@
      "quantity": "0.56261793",
      "side": "long",
      "avg_price": 79983.23,
-     "price": 80144.8,
-     "value": 45090.9,
-     "pnl": 90.9
+     "price": 75717.15,
+     "value": 42599.83,
+     "pnl": -2400.17
     },
     {
      "symbol": "ETH",
      "quantity": "2.15803739",
      "side": "long",
      "avg_price": 2316.92,
-     "price": 2415.6,
-     "value": 5212.96,
-     "pnl": 212.96
+     "price": 2226.07,
+     "value": 4803.94,
+     "pnl": -196.06
     },
     {
      "symbol": "SOL",
      "quantity": "29.75304968",
      "side": "long",
      "avg_price": 100.83,
-     "price": 94.68,
-     "value": 2817.02,
-     "pnl": -182.98
+     "price": 89.83,
+     "value": 2672.72,
+     "pnl": -327.28
     }
    ],
    "trades": [
@@ -1418,7 +1426,7 @@
      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMGV2UGo5V1FRUGxkUzdPWVo1NGhFM2lvM2N5NVUycUUya2VIX3N2aHM5am8tNUhCQ21oMng4LVQ2UllCWnRpdlNqUDd4MTM2ZVhpUTBlR3NQTTdBZFNMVlRDVV9LQ2d4Vjc1M0ZBcldwZmVEaGpDTENnVHR2bmp3Sm9ENnF6YWU1TDRjcmxiSWQwTjY5clQwb2V2a1JMdUhxLXRfLUZwUlNwR0Rob1E?oc=5"
     }
    ],
-   "record": "3 of 9 calls right (33%) over the following 5 trading days",
+   "record": "4 of 12 calls right (33%) over the following 5 trading days",
    "hit_rate": 0.3333333333333333
   },
   {
@@ -1479,8 +1487,8 @@
      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNcXlFekw3c2M2dUdkRkg4UXl4a1Q1SWF5NWdDMi1mU20xSEkzZkhEbGRFbzJpNVpnbFpOaG92R1lYMC1zcENjVnVlQnRSZUM5YzN2V3BCbEJuczlLTDByWUFCdXp4Y1VtNTNNa1hTMVVheGJVczVOcmdfR0cwSTB5MjVrcnpZU3Y3aGhpVlRWNkUtQVYwcEtaWHp2cndLSS1ZWkFyVTFkaTB1NUlvRlBvSnRzV3N4cWZZTUhyZWt4NUUwdWRpMFhGS3VBLUMtYXd0S0hfNU1B?oc=5"
     }
    ],
-   "record": "2 of 6 calls right (33%) over the following 5 trading days",
-   "hit_rate": 0.3333333333333333
+   "record": "2 of 8 calls right (25%) over the following 5 trading days",
+   "hit_rate": 0.25
   },
   {
    "name": "Retail Sentiment Desk",
@@ -1519,8 +1527,8 @@
      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNaUtEMlRyVC02NW1MVnNwX0pWWkhHN09lb3czOHpqRkdxV2ZHa0JGcURTSXk2UHZUWThuOU5GSmI1dHkzUk05b0JMcnFNcWZSX2xsZXRQdHhEZlIxT3l5OV9zYnp3Y2t2d3YzYnpqQ0xkV0pJUEUxUy1rblFaZnhGc2ZvbVB2M2ZxcW1jZUxrT09FTWxHV0Zpbkl3YWJ5dTJYSUFmQjFnb3RvazM5UVRRZXJUanRrRDFlWmJrUzFn0gHDAUFVX3lxTE41UDNVRUtKMEkyN1J6MWNPdUNFeXYxMkRWRUdEUlNlZzdkUXhnYUtTdHA1WWpNU3p2aUhuc0hCaHY5dUdhLUhtdE5tTE9RbTl1alFTbzFDNHN0U01HMzFVLU5FSHZkeWJoUklSb0ROOTRFT0N2U1E5LUdYM2VDZDNCcVJXRk1vb1RXZEZ3RHJHUlFHQ2dCY1NkYmFVeWItY1dGX2VVbzU3eDdLSlZ4Y3JhbGJfaU5QWXF3aGIzcjFhWnhFcw?oc=5"
     }
    ],
-   "record": "1 of 3 calls right (33%) over the following 5 trading days",
-   "hit_rate": 0.3333333333333333
+   "record": "1 of 4 calls right (25%) over the following 5 trading days",
+   "hit_rate": 0.25
   },
   {
    "name": "Macro & Energy Desk",
@@ -1569,7 +1577,7 @@
      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdGo3WTFhVk9qY1FjZmk1c2NoWVBVUmh2S3MySHFzbWJzOXdRWVAteGhicC00NnJoWklnRzNNc01HbVVmWHIwYnpRbDBnVDVRbGxTSmlhZVZrbE5sbmszRlNWU3dHNlpkTURwN0V6ZUxSVWp6RU9HZjRManZPRmNjQ2lWSmxhNXNJNnFSUzlhWG9Sa1NDY0RaUW9RVThkSVdKcHpMUk1tTllVU1VsVDd2N2c1MA?oc=5"
     }
    ],
-   "record": "0 of 3 calls right (0%) over the following 5 trading days",
+   "record": "0 of 4 calls right (0%) over the following 5 trading days",
    "hit_rate": 0.0
   },
   {
@@ -1657,8 +1665,28 @@
      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaUJfVElTNFV0cUR1alljUi0zWHVnbmEzU0VrVVFxWWlYQm1obTFLX0dRUXpkV2RNVklqZEE1bU15QUduNVdleWd0dHhSMkJEWGRWUWFjYnJrVGNKQlBYX3N1OEJzU3F3U1R6YkpCYmdibjg5N2k4OEVCendHRHJBX3FCeEpwMkVkcFh1SVZMUUhRSW1YYWhwaHRCU3dhQ3EzekNfUVpNcHlfZkN2Y0RmN3laVkTSAboBQVVfeXFMTi1GUDJnRnVUNi1feHRSd0JHSFJlTm5MOVFvZzNha0ZWREo1elhaSExDUzA1aTJ4TzNWemFnZWtRYmFWRi0wNDZ3VDh5MFhCNzl2WVJra2NOSWh1SnJheXlRNDJQV3otak1GWmIwbnlUSFhXR3VDSjVVMVY2ZEN1UklQYUFtcmRPSVduT3JsenRFR29DUVBib1NaNTlTNmcxUTVfRDRoUll4Ty1ad3d3R3R0bUNqMFM5ZE53?oc=5"
     }
    ],
-   "record": "13 of 20 calls right (65%) over the following 5 trading days",
-   "hit_rate": 0.65
+   "record": "17 of 24 calls right (71%) over the following 5 trading days",
+   "hit_rate": 0.7083333333333334
   }
- ]
+ ],
+ "benchmark": {
+  "name": "S&P 500 buy-and-hold",
+  "series": [
+   100000.0,
+   101275.05,
+   101623.75,
+   101235.58,
+   99440.77,
+   99440.77,
+   99440.77,
+   98964.43,
+   99260.5,
+   100900.04,
+   96451.18
+  ],
+  "equity": 96451.18,
+  "return_pct": -3.548820000000008,
+  "day_change": -4448.86
+ },
+ "standing": []
 }
