@@ -52,6 +52,19 @@ Desktop, Documents or Downloads, so keep the folder somewhere like `~/paper_trad
 Each run writes a log to `logs/` and adds a line to `logs/runs.csv`; a failed run shows a
 notification.
 
+### Keys (optional)
+
+Put keys in a file called `keys.env` or `api_keys` in this folder, one per line. The scripts read
+it at start-up, and `.gitignore` keeps it off GitHub:
+
+```
+CLAUDE_CODE_OAUTH_TOKEN=sk-ant-oat01-...   # from `claude setup-token`: a one-year login for unattended runs
+EIA_API_KEY=...                            # free, from eia.gov/opendata/register.php
+```
+
+The token from `claude setup-token` uses your Claude plan like `/login` does, but it doesn't
+lapse after a few weeks, so the scheduled runs keep working without you signing in again.
+
 ### Publishing results to GitHub
 
 When this folder is a clone of the GitHub repo, each daily run first pulls code updates

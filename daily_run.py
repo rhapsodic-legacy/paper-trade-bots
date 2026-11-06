@@ -25,6 +25,9 @@ import time
 from datetime import datetime
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from papertrade.keys import load_keys  # noqa: E402
+
 HERE = Path(__file__).resolve().parent
 LOGS = HERE / "logs"
 LABEL = "com.papertrade.daily"
@@ -166,6 +169,7 @@ def main():
     ap.add_argument("--uninstall", action="store_true")
     ap.add_argument("--status", action="store_true")
     args = ap.parse_args()
+    load_keys()  # keys.env / api_keys: data-source keys and the Claude Code token
     if args.install:
         install(args.time)
     elif args.uninstall:

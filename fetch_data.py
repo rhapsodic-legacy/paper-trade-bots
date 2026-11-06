@@ -17,6 +17,7 @@ from papertrade.desk import ResearchDesk
 from papertrade.events import MarketCalendar
 from papertrade.filings import FilingsClerk
 from papertrade.universe import ASSETS
+from papertrade.keys import load_keys
 
 
 def main():
@@ -24,6 +25,7 @@ def main():
     ap.add_argument("--db", default="data.db")
     ap.add_argument("--days", type=int, default=400, help="price history to keep (lab systems use up to 250 days)")
     args = ap.parse_args()
+    load_keys()  # keys.env / api_keys: data-source keys and the Claude Code token
 
     today = date.today()
     prices, news = PriceCache(args.db), NewsCache(args.db)
