@@ -29,6 +29,7 @@ from papertrade.filings import FilingsClerk
 from papertrade.news import NewsCache
 from papertrade.personas import PERSONAS
 from papertrade.universe import ASSETS, START_PRICES
+from papertrade.keys import load_keys
 
 
 
@@ -55,6 +56,7 @@ def main():
     ap.add_argument("--model", help="model alias or name (default: opus)")
     ap.add_argument("--effort", default="medium", choices=["low", "medium", "high", "xhigh", "max"])
     args = ap.parse_args()
+    load_keys()  # keys.env / api_keys: data-source keys and the Claude Code token
 
     if args.synthetic:
         # Synthetic runs continue from the last simulated day in the ledger.

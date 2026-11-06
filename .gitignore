@@ -7,3 +7,5 @@ journals/
 __pycache__/
 .DS_Store
 keys.env
+api_keys
+api_keys.txt
